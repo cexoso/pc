@@ -1,0 +1,24 @@
+<div class="index">
+    <div component="navigator" class="container">
+        <div class="logo">
+            
+        </div>    
+        <span class="nav" ng-class="{'current':currentName==nav.sref}" ng-repeat="nav in navs.data">
+            <span class="nav_item" ng-if="!nav.children" ng-include="'nav'"></span>
+            <span class="menu" ng-class="{'active':active==nav}" ng-click="menuClickHandle(nav)" ng-if="nav.children" ng-include="'menu'"></span>
+        </span>
+    </div>
+    <div ui-view>
+    </div>
+</div>
+<script type="text/ng-template" id="menu">
+    <span>{{nav.name}}</span>
+    <div class="menu_container">
+        <span class="item" ng-repeat="child in nav.children">
+            <a ui-sref="{{child.sref}}">{{child.name}}</a>
+        </span>
+    </div>
+</script>
+<script type="text/ng-template" id="nav">
+    <a ui-sref="{{nav.sref}}">{{nav.name}}</a>
+</script>

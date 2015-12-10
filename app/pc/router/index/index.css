@@ -1,0 +1,25 @@
+.index {
+  background-color: #f3f3f3;
+  min-height: 100vh; }
+
+[router="index"] {
+  min-width: 1600px; }
+  [router="index"] .center {
+    text-align: center; }
+  [router="index"] .title {
+    color: #5c5c5c; }
+  [router="index"] .subtitle {
+    color: #bebebe;
+    border-bottom: 1px dotted #bebebe; }
+    [router="index"] .subtitle::after {
+      border-color: #bebebe transparent transparent transparent;
+      border-style: solid;
+      border-width: 10px 10px 0px;
+      content: " ";
+      display: block;
+      height: 10px;
+      margin: 5px auto;
+      width: 0; }
+  [router="index"] .container {
+    width: 1200px;
+    margin: 0 auto; }

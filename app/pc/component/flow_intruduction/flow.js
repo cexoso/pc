@@ -1,0 +1,9 @@
+angular.module('controller').controller('flowCtrl',['$scope','mTabs',function(s,mTabs){
+    s.tabs=mTabs;
+    s.tabs.promise.then(function(d){
+        s.active=d[0];
+    });
+    s.clickHandle=function(tab){
+        s.active=tab;
+    }
+}]);

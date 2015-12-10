@@ -1,0 +1,17 @@
+<div component="flow">
+
+    <div class="panel">
+        <div class="header">
+            <div class="make">流程</div>
+            <div class="tabs">
+                <span ng-repeat="tab in tabs.data" ng-class="{'active':active==tab}" ng-click="clickHandle(tab)">{{tab.name}}</span>
+            </div>
+        </div>
+        
+        <div class="body">
+            <div ng-include="active.view">
+                
+            </div>
+        </div>
+    </div>
+</div>

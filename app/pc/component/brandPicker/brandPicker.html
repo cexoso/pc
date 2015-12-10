@@ -1,0 +1,9 @@
+<div component="brandPicker">
+    <select ng-model="mOrder.brand" ng-options="b.categoryName for b in brands.data">
+        <option value="" disabled>请选择品牌</option>
+    </select>    
+    {{mOrder.brand}}
+    {{mOrder.categoryName}}
+    <img ng-src="{{mOrder.brand.imageUrl}}" alt="">
+</div>
+

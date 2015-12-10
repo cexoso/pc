@@ -1,0 +1,21 @@
+<div component="carousel" ng-controller="carouselCtrl">
+    <div ng-mouseenter="enter()" ng-mouseleave="leave()">
+        <ul>
+            <li ng-repeat="c in carousel" ng-class="{active:$index==active,
+            last:$index==last,
+            inactive:$index!=active}">
+                <a href="" ng-click="controll.clickImg(c)">
+                    <img ng-src="{{c}}"></a>
+            </li>
+        </ul>
+        <ol>
+            <li ng-repeat="c in carousel" ng-class="{active:$index==active}" ng-click="current($index)">
+            </li>
+        </ol>
+    </div>
+    <div class="footer">
+        <button class="pre" ng-click="pre()"><span></span></button>
+        <button class="next" ng-click="next()"><span></span></button>
+    </div>
+
+</div>

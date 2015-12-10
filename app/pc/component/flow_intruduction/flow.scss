@@ -1,0 +1,42 @@
+[component="flow"]{
+    .panel{
+        border:1px solid #d9d9d9;
+        border-radius: 5px;
+        overflow:hidden;
+        background-color: #fff;
+        .header{
+            overflow: hidden;
+            position: relative;
+            height:60px;
+            .tabs{
+                text-align: center;
+                height:60px;
+                line-height: 60px;
+                span:not(:last-child){
+                    border-right:1px solid #9d9ca1;
+                }
+                span{
+                    padding:0 10px;
+                    color:#aeaeb0;
+                    cursor:pointer;
+                    font-weight: 500;
+                }
+                span.active{
+                    color:#79448c;
+                }                
+            }
+            .make{
+                background-color: #444;
+                color: #fff;
+                font-weight: 600;
+                left: 0;
+                margin-left: -100%;
+                padding: 3px;
+                position: absolute;
+                right: 0;
+                text-align: center;
+                transform: rotate(-38deg) translate(1em, 21px);
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.index{
+    background-color: #f3f3f3;
+    min-height:100vh;
+}
+[router="index"]{
+    min-width:1600px;
+    .center{
+        text-align: center;
+    }
+    .title{
+        color:#5c5c5c;
+    }
+    .subtitle{
+        color:#bebebe;
+        border-bottom:1px dotted #bebebe;
+        &::after{
+            border-color: #bebebe transparent transparent transparent;
+            border-style: solid;
+            border-width: 10px 10px 0px;
+            content: " ";
+            display: block;
+            height: 10px;
+            margin: 5px auto;
+            width: 0;
+        }
+    }
+    .container{
+        width:1200px;
+        margin:0 auto;
+    }
+}

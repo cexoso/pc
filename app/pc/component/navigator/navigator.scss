@@ -1,0 +1,72 @@
+ [component="navigator"]{
+    position:relative; 
+    z-index: 1000;
+    &.container{
+        text-align: center;
+        padding-top: 67px;
+        min-width:1600px;
+        font-size:24px;
+        padding-bottom:24px;    
+        background-color: #f9f9f9;
+        .nav.current{
+            a{
+                color:#76478f;
+            }
+        }
+        .nav{
+            a{
+                color:#484848;
+            }
+            user-select:none;        
+            .active{
+                color:#794693;
+            }
+            .active{
+                background-color: #404042;
+                color:#fff;
+                .menu_container{
+                    display:block;
+                }
+            }
+            .nav_item{
+                padding:23px;
+                a{
+                    text-decoration: none;    
+                }
+            }
+            .menu{
+                padding:23px;
+                cursor:pointer;
+            }
+        }
+        .menu_container{
+            display: none;
+            height:76px;
+            line-height: 76px;
+            position: absolute;
+            vertical-align: middle;
+            top: 123px;
+            background-color: #404042;
+            width: 100%;
+            border-radius: 3px;
+            .item{
+                padding:20px;
+                cursor: pointer;
+                a{
+                    color:#fff;
+                    text-decoration:none;
+                }
+            }
+        }
+        .logo{
+                background: rgba(0, 0, 0, 0) url("/pc/resource/img/logo.png") no-repeat scroll 0 0;
+                float: left;
+                height: 72px;
+                left: 150px;
+                margin:-36px -143px 0 143px;
+                position: relative;                
+                width: 166px;
+        }
+    }   
+ }
+ 

@@ -1,0 +1,111 @@
+[component=carousel]{    
+    position:relative;
+    ul{        
+        display: block;
+        width:100%;
+        height: 650px;
+        background-color: #141824;
+        position:relative;
+        overflow: hidden;        
+        li{            
+            position: absolute;
+            top:0;
+            list-style: none;
+            font-size:0;              
+            width:100%;
+            display:block;
+            img{
+                width:100%;
+                height:auto;
+            }          
+            &.active{
+                z-index: 2;
+                // animation: right-in 1s linear 1 normal;
+                animation: up-in 1s linear 1 normal;
+                animation-fill-mode:forwards;
+            }
+            &.last{
+                z-index: 1;    
+            }
+            &.inactive{
+                z-index: 0;
+                &.last{
+                    z-index: 1;    
+                }
+                // animation: left-out 1s linear 1 normal;
+                // animation-fill-mode:forwards;   
+            }
+            a{
+                display:block;
+            }
+        }
+    }
+    .footer{
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom:0;
+        z-index: 100;
+        button{
+            appearance:none; 
+            border: medium none;
+            outline: medium none;
+            width:100px;
+            background-color:transparent;
+            height: 100%;            
+            &:hover{      
+                background-image: linear-gradient(to right, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .0001) 100%);       
+                span{
+                    opacity: 0.65;     
+
+                }
+            }
+            span{
+                display: block;
+                height: 100px;
+            }
+        }
+        .pre{
+            float: left;
+            span{
+                border-color: #6d6d6d;
+                border-style: solid;
+                border-width: 5px 0 0 5px;
+                transform: rotate(-45deg) skew(-36deg, -36deg) scale(1.75);
+            }
+        }
+        .next{
+            float: right;
+            span{
+                border-color: #6d6d6d;
+                border-style: solid;
+                border-width: 0 5px 5px 0;
+                transform: rotate(-45deg) skew(-36deg, -36deg) scale(1.75);
+            }
+        }
+    }
+    ol{
+        position:absolute;
+        bottom:50px;
+        left: 0;
+        right:0;
+        cursor:pointer;
+        text-align: center;
+        z-index: 1000;
+        li{
+            display:inline-block;
+            display: inline-block;
+            height: 20px;
+            margin: 0 2px;
+            width: 40px;
+            border:1px solid #eee;
+            &:hover{
+                background-color: rgba(255,255,255,0.5);   
+            }
+            &.active{
+                background-color: #ddd;
+            }
+        }
+    }
+}

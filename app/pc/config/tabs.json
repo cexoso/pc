@@ -1,0 +1,10 @@
+[
+    {
+        "name":"上门维修",
+        "view":"views/ondoor.html"
+    },
+    {
+        "name":"寄送维修",
+        "view":"views/send.html"
+    }
+]

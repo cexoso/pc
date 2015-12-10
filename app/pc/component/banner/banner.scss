@@ -1,0 +1,19 @@
+[component="banner"]{
+    margin-top:50px;
+    .banner{
+        position:relative;
+        z-index: 10;
+        height:1000px;
+        background-color: rgba(0,0,0,0);
+    }
+    .parallax{
+        position:fixed;
+        z-index: -11;
+        top: 0;
+        left:0;
+        right:0;
+        bottom:0;
+        width:100%;
+        height:auto;
+    }     
+}
