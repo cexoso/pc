@@ -6,7 +6,8 @@
     height: 650px;
     background-color: #141824;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    will-change: true; }
     [component=carousel] ul li {
       position: absolute;
       top: 0;

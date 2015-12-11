@@ -1,0 +1,12 @@
+angular.module('controller').controller('fixedContactCtrl',['$scope',function(s){    
+    s.clickHandle=function(name){
+        s.tpl=name;
+        if(s.show!=name){
+            s.show=name;
+        }else{
+            s.show=false;            
+        }
+    }    
+    s.show=false;    
+    s.tpl=null;
+}]);

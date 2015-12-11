@@ -5,15 +5,38 @@
     },
     {
         "name":"维修下单",
-        "sref":"indexContainer"
+        "sref":"indexContainer.repair",
+        "hot":true
     },
     {
         "name":"二手机回收",
-        "sref":"indexContainer"
+        "sref":"indexContainer",
+        "hot":true
     },
     {
-        "name":"碎屏保险",
-        "sref":"indexContainer"
+        "name":"特色服务",
+        "children":[
+            {
+                "name":"碎屏保险",
+                "sref":"indexContainer"
+            },
+            {
+                "name":"定制彩壳",
+                "sref":"indexContainer"
+            },
+            {
+                "name":"硬盘升级",
+                "sref":"indexContainer"
+            },
+            {
+                "name":"新机售卖",
+                "sref":"indexContainer"
+            },
+            {
+                "name":"数据传输",
+                "sref":"indexContainer"
+            }
+        ]
     },
     {
         "name":"公司简介",
@@ -22,30 +45,5 @@
     {
         "name":"联系我们",
         "sref":"indexContainer"
-    },{
-       "name":"更多",
-        "children":[
-            {
-                "name":"item1",
-                "sref":"indexContainer"
-            },
-            {
-                "name":"item2",
-                "sref":"indexContainer"
-            }
-        ]
-    },
-    {
-       "name":"更少",
-        "children":[
-            {
-                "name":"item3",
-                "sref":"indexContainer"
-            },
-            {
-                "name":"item4",
-                "sref":"indexContainer"
-            }
-        ]
     }
 ]

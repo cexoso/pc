@@ -1,0 +1,110 @@
+[component="fixedContact"]{
+    position:fixed;
+    top:50%;
+    right:0;
+    transform:translate(0,-50%);
+    z-index: 10000;
+    .container{
+        position:relative;
+        width: auto !important;        
+        color:#fff;
+        transition:all 0.3s;
+        .f{
+            cursor: pointer;
+        }
+        .wechat{
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        .c,.b{            
+            margin:2px 0;
+            background-color: #aaa;
+            padding: 10px 0;
+            a{
+                text-decoration: none;
+                color:inherit;
+            }
+        }
+        .c{                                    
+            text-align: center;
+            vertical-align: middle;
+            .icon{
+                font-size:30px;
+            }
+        }
+        .b{
+            text-align: center;
+            vertical-align: middle;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;   
+        }
+        .c:hover,.b:hover{
+            background-color: #fff;
+            color:#78448f;
+        }
+    }
+}
+
+[tpl="fixedContact"]{
+    position: fixed;
+    right: 80px;
+    top: 50%;
+    transform: translate(0px, -76px);
+    z-index: 10000;
+    .headset{
+        padding:10px 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        border:2px solid #666;
+        .header{
+            text-align: center;
+            margin:5px 0;
+            span{
+                background-color: #663399;
+                display: inline-block;
+                width:45px;
+                height:45px;
+                line-height: 45px;
+                text-align: center;
+                vertical-align: middle;
+                border-radius: 50%;
+                .icon{
+                    color:#fff;
+                    font-size:24px;
+                }
+            }
+        }
+        .body{
+            margin:5px 0;
+            .tel{
+                text-align: center;
+                font-size:30px;
+            }
+            .tips{
+                text-align: center;
+                letter-spacing: 3px;
+            }
+            color:#666;
+        }
+        .footer{
+            margin:5px 0;
+            color:#666;
+            font-size:14px;
+        }
+    }
+    .qc{
+        padding:10px 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        border:1px solid #666;
+        .body{
+            
+        }
+        .footer{
+            margin-top:10px;
+            color:#666;
+            font-size:18px;
+            text-align: center;
+        }
+    }
+}

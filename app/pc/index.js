@@ -38,6 +38,11 @@ function ($stateProvider, $urlRouterProvider) {
         url:'/index',
         templateUrl:"router/index/index.html",
         controller:'indexCtrl'
+    })
+    .state('indexContainer.repair',{
+        url:'/repair',
+        templateUrl:"router/repair/repair.html",
+        controller:'repairCtrl'
     });
 }]).config(["$controllerProvider", "$compileProvider", "$filterProvider", "$provide",function($controllerProvider, $compileProvider, $filterProvider, $provide){
     angular.module('patica').register = {

@@ -17,10 +17,7 @@ angular.module('services').service("mNavs",['$http','$q','$timeout',function($ht
         });
         return d.promise;
     }
-    $timeout(function(){
-        get.call(obj).then(function(){        
-        });
-    },2000);
-    
+    get.call(obj).then(function(){        
+    });    
     return obj;
 }]);

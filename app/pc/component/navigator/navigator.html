@@ -3,16 +3,18 @@
         <div class="logo">
             
         </div>    
-        <span class="nav" ng-class="{'current':currentName==nav.sref}" ng-repeat="nav in navs.data">
-            <span class="nav_item" ng-if="!nav.children" ng-include="'nav'"></span>
+        <span class="nav" ng-class="{'current':current==nav}" ng-repeat="nav in navs.data">
+            <span class="nav_item" ng-if="!nav.children" ng-click="navClickHandle(nav)" ng-include="'nav'"></span>
             <span class="menu" ng-class="{'active':active==nav}" ng-click="menuClickHandle(nav)" ng-if="nav.children" ng-include="'menu'"></span>
         </span>
+        <div ng-include="'component/navigator/navPoint/navPoint.html'" ng-controller="navPoint"></div>
     </div>
     <div ui-view>
     </div>
 </div>
 <script type="text/ng-template" id="menu">
-    <span>{{nav.name}}</span>
+    <span class="menu_item">{{nav.name}}</span>
+        <span class="arrow"></span>
     <div class="menu_container">
         <span class="item" ng-repeat="child in nav.children">
             <a ui-sref="{{child.sref}}">{{child.name}}</a>
@@ -21,4 +23,10 @@
 </script>
 <script type="text/ng-template" id="nav">
     <a ui-sref="{{nav.sref}}">{{nav.name}}</a>
+    <span style="position:relative;">
+        <span ng-if="nav.hot" ng-include="'component/navigator/hot/hot.html'">
+        
+        </span>
+    </span>
+    
 </script>

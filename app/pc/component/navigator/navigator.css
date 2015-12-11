@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1000; }
   [component="navigator"].container {
-    text-align: center;
+    text-align: left;
     padding-top: 67px;
     min-width: 1600px;
     font-size: 24px;
@@ -24,23 +24,43 @@
         color: #fff; }
         [component="navigator"].container .nav .active .menu_container {
           display: block; }
-      [component="navigator"].container .nav .nav_item {
-        padding: 23px; }
-        [component="navigator"].container .nav .nav_item a {
-          text-decoration: none; }
+      [component="navigator"].container .nav .nav_item a {
+        padding: 23px;
+        text-decoration: none; }
       [component="navigator"].container .nav .menu {
         padding: 23px;
         cursor: pointer; }
+        [component="navigator"].container .nav .menu.active .arrow {
+          transition: all 0.3s;
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+          border-color: #fff #fff transparent transparent; }
+        [component="navigator"].container .nav .menu .arrow {
+          transition: all 0.3s;
+          border-color: #484848 #484848 transparent transparent;
+          border-style: solid;
+          border-width: 2px;
+          display: inline-block;
+          height: 10px;
+          margin-left: 5px;
+          position: relative;
+          top: -2px;
+          -webkit-transform: rotate(135deg);
+                  transform: rotate(135deg);
+          -webkit-transform-origin: 84% 37% 0;
+                  transform-origin: 84% 37% 0;
+          width: 10px; }
     [component="navigator"].container .menu_container {
       display: none;
       height: 76px;
       line-height: 76px;
       position: absolute;
       vertical-align: middle;
-      top: 123px;
+      top: 122px;
       background-color: #404042;
       width: 100%;
-      border-radius: 3px; }
+      border-radius: 3px;
+      text-align: center; }
       [component="navigator"].container .menu_container .item {
         padding: 20px;
         cursor: pointer; }
@@ -51,7 +71,6 @@
       background: transparent url("/pc/resource/img/logo.png") no-repeat scroll 0 0;
       float: left;
       height: 72px;
-      left: 150px;
-      margin: -36px -143px 0 143px;
+      margin: -36px 20px 0 120px;
       position: relative;
       width: 166px; }

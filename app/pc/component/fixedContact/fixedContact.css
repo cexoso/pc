@@ -1,0 +1,88 @@
+[component="fixedContact"] {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 10000; }
+  [component="fixedContact"] .container {
+    position: relative;
+    width: auto !important;
+    color: #fff;
+    transition: all 0.3s; }
+    [component="fixedContact"] .container .f {
+      cursor: pointer; }
+    [component="fixedContact"] .container .wechat {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+    [component="fixedContact"] .container .c, [component="fixedContact"] .container .b {
+      margin: 2px 0;
+      background-color: #aaa;
+      padding: 10px 0; }
+      [component="fixedContact"] .container .c a, [component="fixedContact"] .container .b a {
+        text-decoration: none;
+        color: inherit; }
+    [component="fixedContact"] .container .c {
+      text-align: center;
+      vertical-align: middle; }
+      [component="fixedContact"] .container .c .icon {
+        font-size: 30px; }
+    [component="fixedContact"] .container .b {
+      text-align: center;
+      vertical-align: middle;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; }
+    [component="fixedContact"] .container .c:hover, [component="fixedContact"] .container .b:hover {
+      background-color: #fff;
+      color: #78448f; }
+
+[tpl="fixedContact"] {
+  position: fixed;
+  right: 80px;
+  top: 50%;
+  -webkit-transform: translate(0px, -76px);
+          transform: translate(0px, -76px);
+  z-index: 10000; }
+  [tpl="fixedContact"] .headset {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #666; }
+    [tpl="fixedContact"] .headset .header {
+      text-align: center;
+      margin: 5px 0; }
+      [tpl="fixedContact"] .headset .header span {
+        background-color: #663399;
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%; }
+        [tpl="fixedContact"] .headset .header span .icon {
+          color: #fff;
+          font-size: 24px; }
+    [tpl="fixedContact"] .headset .body {
+      margin: 5px 0;
+      color: #666; }
+      [tpl="fixedContact"] .headset .body .tel {
+        text-align: center;
+        font-size: 30px; }
+      [tpl="fixedContact"] .headset .body .tips {
+        text-align: center;
+        letter-spacing: 3px; }
+    [tpl="fixedContact"] .headset .footer {
+      margin: 5px 0;
+      color: #666;
+      font-size: 14px; }
+  [tpl="fixedContact"] .qc {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #666; }
+    [tpl="fixedContact"] .qc .footer {
+      margin-top: 10px;
+      color: #666;
+      font-size: 18px;
+      text-align: center; }

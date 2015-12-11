@@ -1,0 +1,20 @@
+[component="hot"] {
+  position: absolute;
+  right: 47px;
+  top: -39px; }
+  [component="hot"] .c {
+    background-color: #333366;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 70%;
+    padding: 5px 10px; }
+  [component="hot"] .b {
+    border-color: #333366 transparent transparent;
+    border-style: solid;
+    border-width: 9px 13px 0 0;
+    content: "";
+    display: block;
+    top: -1px;
+    left: 5px;
+    position: relative;
+    width: 0; }

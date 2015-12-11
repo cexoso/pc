@@ -44,10 +44,14 @@ angular.module('controller').controller('carouselCtrl',['$scope','mCarousel','$i
     
     function _next(){
         s.last=s.active;
+        s._next=true;
+        s._pre=false;
         s.active=(s.active+1)%s.carousel.length;
     }    
     function _pre(){
         s.last=s.active;
+        s._pre=true;
+        s._next=false;
         s.active=(s.active+s.carousel.length-1)%s.carousel.length;
     }
     function _current(i){        

@@ -1,0 +1,7 @@
+[component="navPoint"] .line {
+  transition: all 0.3s;
+  position: absolute;
+  height: 3px;
+  bottom: 8px;
+  left: 286px;
+  width: 101px; }
