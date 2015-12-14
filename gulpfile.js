@@ -22,7 +22,9 @@ var gulp = require('gulp'),
     Q = require('q'),
     templateCache = require('gulp-angular-templatecache'),
     autoprefixer = require('gulp-autoprefixer'),
+    minimist=require('minimist'),
     httpProxy = require('http-proxy');
+
     var proxy = httpProxy.createProxyServer({});
     proxy.on('error', function (err, req, res) {
         console.log(err);
@@ -279,10 +281,10 @@ gulp.task('scss:watch', function () {
         })
         .on('unlink', scssRemove);
 });
-gulp.task('test',['clear'], function () {
-    var arr=['app/pc/**/*.scss','!app/pc/**/base.scss'];
-    return gulp.src(arr)
-    .pipe(gulp.dest('./dist'));
+gulp.task('test',function () {
+
+    console.log(minimist(process.argv.slice(2)));
+    return console.log(1);
 })
 
 

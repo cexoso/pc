@@ -48,9 +48,7 @@ body {
   100% {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    opacity: 1;
-    position: relative; } }
+            transform: translate(-50%, 0); } }
 
 @keyframes right-in {
   0% {
@@ -60,9 +58,7 @@ body {
   100% {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    opacity: 1;
-    position: relative; } }
+            transform: translate(-50%, 0); } }
 
 @-webkit-keyframes left-out {
   0% {
@@ -81,6 +77,46 @@ body {
             transform: translate(50%, 0); }
   100% {
     right: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@-webkit-keyframes left-in {
+  0% {
+    right: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% {
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0); } }
+
+@keyframes left-in {
+  0% {
+    right: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% {
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0); } }
+
+@-webkit-keyframes right-out {
+  0% {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  100% {
+    left: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes right-out {
+  0% {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  100% {
+    left: 100%;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); } }
 

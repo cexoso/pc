@@ -37,7 +37,7 @@ body{
         background-position: 0 0
     }
 }
-// 从左进入
+// 右进左出
 @keyframes right-in {
     0% {
         left:100%;
@@ -45,9 +45,7 @@ body{
     }
     100% {
         left:50%; 
-        transform:translate(-50%,0);       
-        opacity:1;
-        position: relative;
+        transform:translate(-50%,0);
     }
 }
 @keyframes left-out {
@@ -60,6 +58,28 @@ body{
         transform:translate(0,0);
     }
 }
+//左进右出
+@keyframes left-in {
+    0% {
+        right:100%;
+        transform:translate(0,0);
+    }
+    100% {
+        right:50%;
+        transform:translate(50%,0);
+    }
+}
+@keyframes right-out {
+    0% {
+        left:50%; 
+        transform:translate(-50%,0);
+    }
+    100% {
+        left:100%;
+        transform:translate(0,0);
+    }
+}
+//从上进入
 @keyframes up-in {
     0% {
         top:-100%;
@@ -76,4 +96,3 @@ body{
         position: relative;
     }
 }
-                

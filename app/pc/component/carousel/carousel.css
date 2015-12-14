@@ -20,14 +20,26 @@
         height: auto; }
       [component=carousel] ul li.active {
         z-index: 2;
-        -webkit-animation: up-in 1s linear 1 normal;
-                animation: up-in 1s linear 1 normal;
         -webkit-animation-fill-mode: forwards;
                 animation-fill-mode: forwards; }
+        [component=carousel] ul li.active.next {
+          -webkit-animation: right-in 1s linear 1 normal;
+                  animation: right-in 1s linear 1 normal; }
+        [component=carousel] ul li.active.pre {
+          -webkit-animation: left-in 1s linear 1 normal;
+                  animation: left-in 1s linear 1 normal; }
       [component=carousel] ul li.last {
         z-index: 1; }
       [component=carousel] ul li.inactive {
-        z-index: 0; }
+        z-index: 0;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; }
+        [component=carousel] ul li.inactive.next {
+          -webkit-animation: left-out 1s linear 1 normal;
+                  animation: left-out 1s linear 1 normal; }
+        [component=carousel] ul li.inactive.pre {
+          -webkit-animation: right-out 1s linear 1 normal;
+                  animation: right-out 1s linear 1 normal; }
         [component=carousel] ul li.inactive.last {
           z-index: 1; }
       [component=carousel] ul li a {

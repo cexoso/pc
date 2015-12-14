@@ -21,20 +21,31 @@
             }          
             &.active{
                 z-index: 2;
-                // animation: right-in 1s linear 1 normal;
-                animation: up-in 1s linear 1 normal;
+                // animation: up-in 1s linear 1 normal;
                 animation-fill-mode:forwards;
+                &.next{
+                    animation: right-in 1s linear 1 normal;
+                }
+                &.pre{
+                    animation: left-in 1s linear 1 normal;
+                }
             }
             &.last{
                 z-index: 1;    
             }
             &.inactive{
+                &.next{
+                    animation: left-out 1s linear 1 normal;    
+                }
+                &.pre{
+                    animation: right-out 1s linear 1 normal;
+                }
                 z-index: 0;
                 &.last{
                     z-index: 1;    
                 }
-                // animation: left-out 1s linear 1 normal;
-                // animation-fill-mode:forwards;   
+                
+                animation-fill-mode:forwards;   
             }
             a{
                 display:block;
