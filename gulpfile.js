@@ -125,7 +125,7 @@ function dist_css() {
 };
 
 function makeCache() {
-    return gulp.src('app/pc/components/**/*.html')
+    return gulp.src('app/pc/component/**/*.html')
         .pipe(sort())
         .pipe(templateCache({
             root: 'components'

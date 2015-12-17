@@ -1,0 +1,52 @@
+ [component="about_us"]{
+    .body{
+        .t{
+            border:1px solid #dcdedd;
+            border-radius: 3px;
+            font-size:16px;
+            display: inline-block;
+            width:584px;
+            vertical-align: top;
+            &.company{
+                float:left;
+                .img{
+                    background:url(/pc/resource/img/aboutus1.jpg) -2px -1px no-repeat;
+                    height: 285px;
+                }
+            }
+            &.cooperation{
+                float:right;
+                .img{
+                    background:url(/pc/resource/img/aboutus2.jpg) -2px -1px no-repeat;
+                    height: 285px;
+                }
+            }
+        }
+        .p{
+            background-color:#fff;
+            padding:10px;
+        }
+        .footer{
+            background-color: #f6f7f6;
+            border-top: 1px solid #e2e2e2;
+            line-height: 70px;
+            text-align: center;
+            .btn{
+                border-radius: 3px;
+                background-color: #fff;
+                border: 1px solid #dcdedd;
+                color: #22476c;
+                display: inline-block;
+                line-height: 40px;
+                text-align: center;
+                width: 200px;
+                text-decoration: none;     
+                &:hover{
+                    border:1px solid #22476c;
+                    background-color: #22476c;
+                    color:#fff;
+                }          
+            }
+        }
+    }
+ }

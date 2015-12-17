@@ -56,6 +56,8 @@ angular.module('controller').controller('carouselCtrl',['$scope','mCarousel','$i
     }
     function _current(i){        
         s.last=s.active;
+        s._next=true;
+        s._pre=false;
         s.active=i;
     }
     var animateTime=1000;

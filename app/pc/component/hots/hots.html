@@ -1,0 +1,24 @@
+<div component="hots">
+    <div class="head">
+        <h1 class="center title">
+            维修报价
+        </h1>
+        <h4 class="center">
+            <span class="subtitle">Mobile phones and pad Repair</span>
+        </h4>    
+    </div>
+    <div class="body">
+        
+        <div class="t" ng-repeat="hot in hots.data">
+            <div class="c">
+                <img ng-src="{{hot.href}}" class="photo">
+                <div ng-repeat="quote in hot.hots" class="quote clearfix">
+                    <font style="float:left;">{{quote.name}}</font><font style="float:right;">{{quote.price|currency:'￥'}}</font>
+                </div>
+                <div class="foot">
+                    <button class="btn">更多报价</button>
+                </div>
+            </div>
+        </div>        
+    </div>    
+</div>

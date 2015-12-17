@@ -1,0 +1,50 @@
+[component="hots"]{
+    .body{
+        .t{
+            display: inline-block;
+            width: 33%;
+            .c{
+                font-size:0;    
+                width:388px;
+                margin:10px auto;
+                .quote{
+                    font-size:14px;
+                }
+                .photo{
+                    height: 160px;
+                    width: 388px;
+                }
+            }
+            .quote{
+                padding:10px;
+                background-color: #fff;
+                border:1px solid #d9dbda;
+                &:hover{
+                    border:1px solid #404043;
+                    background-color: #404043;
+                    color:#fff;
+                }
+            }
+            .foot{
+                background-color: #f6f7f6;
+                border:1px solid #d9dbda;
+                padding:10px;
+                text-align: center;
+                .btn{
+                    appearance:none;
+                    outline: none;
+                    border:1px solid #d9dbda;
+                    background-color: #fff;
+                    color:#22476c;
+                    height:30px;                    
+                    width:85px;
+                    &:hover{
+                        border:1px solid #22476c;
+                        background-color: #22476c;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}

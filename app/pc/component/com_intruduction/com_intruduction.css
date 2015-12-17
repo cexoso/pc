@@ -1,0 +1,28 @@
+[component="com_intruduction"] .i {
+  display: inline-block;
+  height: 140px;
+  width: 140px;
+  background-image: url(/pc/resource/img/index.png);
+  line-height: 140px;
+  vertical-align: middle; }
+
+[component="com_intruduction"] .f {
+  display: inline-block;
+  vertical-align: middle; }
+  [component="com_intruduction"] .f font {
+    font-weight: bold;
+    font-size: 25px; }
+
+[component="com_intruduction"] .ondoor, [component="com_intruduction"] .quality_assurance, [component="com_intruduction"] .original_accessories {
+  display: inline-block;
+  width: 33%;
+  text-align: center; }
+
+[component="com_intruduction"] .ondoor .i {
+  background-position: -7px 0; }
+
+[component="com_intruduction"] .quality_assurance .i {
+  background-position: -165px 0; }
+
+[component="com_intruduction"] .original_accessories .i {
+  background-position: -323px 0; }

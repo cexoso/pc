@@ -1,0 +1,38 @@
+[component="com_intruduction"]{
+    .i{
+        display: inline-block;
+        height:140px;
+        width:140px;        
+        background-image: url(/pc/resource/img/index.png);
+        line-height: 140px;
+        vertical-align: middle;
+    }
+    .f{
+        display:inline-block;
+        vertical-align: middle;
+        font{
+            font-weight: bold;
+            font-size:25px;
+        }
+    }
+    .ondoor,.quality_assurance,.original_accessories{
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+    }
+    .ondoor{
+        .i{
+            background-position: -7px 0;
+        }
+    }
+    .quality_assurance{
+        .i{
+            background-position: -165px 0;
+        }
+    }
+    .original_accessories{
+        .i{
+            background-position: -323px 0;
+        }
+    }
+}

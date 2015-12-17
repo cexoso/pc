@@ -1,6 +1,7 @@
 .index{
     background-color: #f3f3f3;
     min-height:100vh;
+    min-width:1600px;
 }
 [router="index"]{
     min-width:1600px;
@@ -8,7 +9,7 @@
         text-align: center;
     }
     .title{
-        color:#5c5c5c;
+        color:#385676;
     }
     .subtitle{
         color:#bebebe;
@@ -27,5 +28,23 @@
     .container{
         width:1200px;
         margin:0 auto;
+    }
+    .intruduction{
+        padding:40px 0;
+        background-color: #fff;
+    }
+    .about_us{
+        min-height:220px;
+        padding:40px 0;
+    }
+    .carousel{
+        min-height: 650px;
+    }
+    .copyright{
+        background-color: #000;
+        text-align: center;
+        color:#aaa;
+        height:45px;
+        line-height:45px;
     }
 }

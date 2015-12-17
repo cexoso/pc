@@ -85,19 +85,19 @@
                 transform: rotate(-45deg) skew(-36deg, -36deg) scale(1.75); }
   [component=carousel] ol {
     position: absolute;
-    bottom: 50px;
+    bottom: 24px;
     left: 0;
     right: 0;
     cursor: pointer;
     text-align: center;
     z-index: 1000; }
     [component=carousel] ol li {
+      border: 1px solid rgba(238, 238, 238, 0.5);
+      border-radius: 50%;
       display: inline-block;
-      display: inline-block;
-      height: 20px;
-      margin: 0 2px;
-      width: 40px;
-      border: 1px solid #eee; }
+      height: 15px;
+      margin: 0 5px;
+      width: 15px; }
       [component=carousel] ol li:hover {
         background-color: rgba(255, 255, 255, 0.5); }
       [component=carousel] ol li.active {
