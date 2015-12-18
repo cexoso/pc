@@ -1,3 +1,8 @@
 <div router="repair">
-    <h1>123456789abcd</h1>
+    <div class="navgator">
+        <div ng-include="'component/repair_module/navigator/navigator.html'" ng-controller="reapairNavigatorCtrl"></div>    
+    </div>
+    <div class="brandPicker">
+        <div ng-include="'component/repair_module/brandPicker/brandPicker.html'" ng-controller="brandPickerCtrl"></div>    
+    </div>
 </div>

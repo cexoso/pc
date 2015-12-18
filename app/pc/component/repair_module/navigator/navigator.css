@@ -1,0 +1,23 @@
+[component="repari/navigator"] {
+  background-color: green; }
+  [component="repari/navigator"] ul {
+    text-align: center; }
+    [component="repari/navigator"] ul .nav_item {
+      display: inline-block;
+      background-color: #fff;
+      color: #c5c5c5;
+      position: relative;
+      padding: 12px 12px 12px 37px; }
+      [component="repari/navigator"] ul .nav_item:not(:last-child)::after {
+        border-color: transparent transparent transparent black;
+        border-style: solid;
+        border-width: 25px;
+        content: "";
+        display: inline-block;
+        height: 0;
+        margin-top: -25px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        width: 0;
+        z-index: 1; }
