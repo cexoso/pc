@@ -1,7 +1,9 @@
 <div component="repari/navigator">
     <ul>
-        <li class="nav_item" ng-repeat="nav in mRepariNav">
+        <li class="nav_item" ng-click="clickHandle(nav)" ng-class="{'active':nav==active}" ng-repeat="nav in mRepariNav">
             {{nav.name}}
+            <div class="arrow_right"></div>
+            <div class="arrow_right_inset"></div>
         </li>
     </ul>
 </div>
