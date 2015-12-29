@@ -6,6 +6,10 @@ angular.module('controller').controller('reapairNavigatorCtrl',['$scope','$rootS
     }
     function setActive(nav){
         s.active=nav;
-        $rootScope.$broadcast('repair_view_change',s.active);
+        s.mRepariNav.active=nav;
     }
+    s.$on("repair_view:next",function(){
+        var i=mRepariNav.indexOf(mRepariNav.active);
+        setActive(mRepariNav[(i+1)%mRepariNav.length]);
+    })
 }]);

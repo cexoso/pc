@@ -9,6 +9,17 @@ body{
     font-family: "Hiragino Sans GB", "Microsoft YaHei";   
     color:rgb(71,71,71);
 }
+// body::after{
+//     background:rgba(0, 0, 0, 0) url("/1.jpg") repeat scroll 0 0/100% auto;
+//     content:"";
+//     display:block;
+//     position:absolute;
+//     top:0;
+//     left:0;
+//     right:0;
+//     bottom:0;
+//     z-index: 99999;
+// }
 .clearfix::after{
     content:" ";
     display:table;
@@ -25,6 +36,7 @@ body{
     background-size: 20px 20px;
     animation: progress-bar-stripes 1s linear infinite normal;    
     visibility: hidden;
+    z-index: 1000;
     &.active{
         visibility:visible;
     }

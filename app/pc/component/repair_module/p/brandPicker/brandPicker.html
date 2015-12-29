@@ -1,0 +1,9 @@
+<div component="repari/brandPicker" ng-controller="brandPickerCtrl">
+    <div class="head">
+        <ul class="brand">
+            <li class="item" ng-click="clickHandle(b)" ng-class="{'active':b==o.brand}"ng-repeat="b in mBrand.data">
+                {{b.categoryName}}
+            </li>
+        </ul>            
+    </div>        
+</div>

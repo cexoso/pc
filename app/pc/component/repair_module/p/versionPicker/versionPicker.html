@@ -1,0 +1,9 @@
+<div component="repari/versionPicker" ng-controller="versionPickerCtrl">
+    <div class="head">
+        <ul class="version clearfix">
+            <li class="item" ng-click="clickHandle(b)" ng-class="{'active':b==active}"ng-repeat="b in mVersion.data.resultModel">
+                {{b.goodsName}}
+            </li>
+        </ul>            
+    </div>        
+</div>

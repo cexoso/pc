@@ -1,0 +1,10 @@
+<div component="repari/color" ng-controller="colorCtrl">
+     <div class="head">
+        <span class="tips">颜色:</span>
+        <ul class="color">
+            <li class="item" ng-click="clickHandle(b)" ng-class="{'active':b==o.color}"ng-repeat="b in mColor.data">
+                {{b.categoryName}}
+            </li>
+        </ul>
+    </div>        
+</div>

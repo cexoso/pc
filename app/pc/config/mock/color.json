@@ -1,0 +1,72 @@
+{
+    "code": 200,
+    "msg": "",
+    "data": [
+        {
+            "id": 7,
+            "categoryName": "金色",
+            "isShowUp": 0,
+            "imageUrl": null,
+            "description": null,
+            "categoryType": "2002",
+            "categoryCode": "c0001",
+            "parentCode": null,
+            "goodsType": 1001
+        },
+        {
+            "id": 8,
+            "categoryName": "银色",
+            "isShowUp": 0,
+            "imageUrl": null,
+            "description": null,
+            "categoryType": "2002",
+            "categoryCode": "c0002",
+            "parentCode": null,
+            "goodsType": 1001
+        },
+        {
+            "id": 9,
+            "categoryName": "白色",
+            "isShowUp": 0,
+            "imageUrl": null,
+            "description": null,
+            "categoryType": "2002",
+            "categoryCode": "c0003",
+            "parentCode": null,
+            "goodsType": 1001
+        },
+        {
+            "id": 10,
+            "categoryName": "灰色",
+            "isShowUp": 0,
+            "imageUrl": null,
+            "description": null,
+            "categoryType": "2002",
+            "categoryCode": "c0004",
+            "parentCode": null,
+            "goodsType": 1001
+        },
+        {
+            "id": 11,
+            "categoryName": "黑色",
+            "isShowUp": 0,
+            "imageUrl": null,
+            "description": null,
+            "categoryType": "2002",
+            "categoryCode": "c0005",
+            "parentCode": null,
+            "goodsType": 1001
+        },
+        {
+            "id": 12,
+            "categoryName": "粉色",
+            "isShowUp": 0,
+            "imageUrl": null,
+            "description": null,
+            "categoryType": "2002",
+            "categoryCode": "c0006",
+            "parentCode": null,
+            "goodsType": 1001
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+angular.module('controller').controller('addressInfoCtrl',['$scope','$rootScope','$timeout','mAddress','mPhoneOrder',function(s,$rootScope,$timeout,mAddress,mPhoneOrder){
+    s.$watch("address.province",function(n){
+        if(!n){
+            return;
+        }
+        mAddress.getCity(n.code);
+    });
+    s.$watch("address.city",function(n){
+        if(!n){
+            return;
+        }
+        mAddress.getArea(n.code);
+    });    
+    mPhoneOrder.o['address']=mPhoneOrder.o['address']||{};
+    s.province=mAddress.province;
+    s.city=mAddress.city;
+    s.area=mAddress.area;
+    mAddress.getProvince().then(function(){
+        s.address=mPhoneOrder.o.address;
+    });
+}]);

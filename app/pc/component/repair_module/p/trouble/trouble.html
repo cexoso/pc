@@ -1,0 +1,25 @@
+<div component="repari/trouble" ng-controller="troubleCtrl">
+    <div>
+        <ul class="touble_head">
+            <li class="item" ng-class="{'active':check(item)}" ng-click="clickHandle(item)" ng-repeat="item in mTrouble.data.troubleHead">
+                <div class="c">
+                    <img ng-src="{{item.ImageUrl}}">
+                    <span>{{item.categoryName}}</span>    
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="trouble_body clearfix">
+        <ul class="f">
+            <li class="item" ng-click="listFclickHandle(item)" ng-class="{'active':check(item)}" ng-repeat="item in mTrouble.data.troubleBody">
+                {{item.categoryName}}
+            </li>
+        </ul>
+        <div class="spet"></div>
+        <ul class="s">
+            <li class="item" ng-class="{'active':check(item)}" ng-click="listSclickHandle(item)" ng-repeat="item in items.child">
+                {{item.categoryName}}
+            </li>
+        </ul>
+    </div>
+</div>

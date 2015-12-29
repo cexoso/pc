@@ -1,0 +1,61 @@
+{
+    "code": 200, 
+    "msg": "", 
+    "data": [
+        {
+            "id": 1, 
+            "categoryName": "苹果", 
+            "isShowUp": 0, 
+            "imageUrl": "http://www.patica.com.cn/img2/business/logo/apple.png", 
+            "description": null, 
+            "categoryType": "2001", 
+            "categoryCode": "b0001", 
+            "parentCode": null, 
+            "goodsType": 1001
+        }, 
+        {
+            "id": 2, 
+            "categoryName": "三星", 
+            "isShowUp": 0, 
+            "imageUrl": "http://www.patica.com.cn/img2/business/logo/sumsung.png", 
+            "description": null, 
+            "categoryType": "2001", 
+            "categoryCode": "b0002", 
+            "parentCode": null, 
+            "goodsType": 1001
+        }, 
+        {
+            "id": 3, 
+            "categoryName": "小米", 
+            "isShowUp": 0, 
+            "imageUrl": "http://www.patica.com.cn/img2/business/logo/mi.png", 
+            "description": null, 
+            "categoryType": "2001", 
+            "categoryCode": "b0003", 
+            "parentCode": null, 
+            "goodsType": 1001
+        }, 
+        {
+            "id": 4, 
+            "categoryName": "华为", 
+            "isShowUp": 0, 
+            "imageUrl": "http://www.patica.com.cn/img2/business/logo/huawei.png", 
+            "description": null, 
+            "categoryType": "2001", 
+            "categoryCode": "b0004", 
+            "parentCode": null, 
+            "goodsType": 1001
+        }, 
+        {
+            "id": 5, 
+            "categoryName": "魅族", 
+            "isShowUp": 0, 
+            "imageUrl": "http://www.patica.com.cn/img2/business/logo/meizu.png", 
+            "description": null, 
+            "categoryType": "2001", 
+            "categoryCode": "b0005", 
+            "parentCode": null, 
+            "goodsType": 1001
+        }
+    ]
+}

@@ -7,10 +7,11 @@
     position: relative;
     height: 50px;
     line-height: 50px;
-    width: 150px;
+    width: 200px;
     text-indent: 20px;
     border-top: 1px solid #e2e2e2;
-    border-bottom: 1px solid #e2e2e2; }
+    border-bottom: 1px solid #e2e2e2;
+    cursor: pointer; }
     [component="repari/navigator"] ul .nav_item.active {
       border-color: #21476c;
       background-color: #21476c;

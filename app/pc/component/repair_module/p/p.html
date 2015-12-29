@@ -1,0 +1,44 @@
+<div component="repari/p/p" ng-controller="pCtrl">
+    <div ng-include="'component/repair_module/p/brandPicker/brandPicker.html'"></div>
+    <div class="body">
+        <div ng-include="'component/repair_module/p/versionPicker/versionPicker.html'"></div>
+        <div ng-include="'component/repair_module/p/colorPicker/colorPicker.html'"></div>
+        <div class="trouble">
+            <div ng-include="'component/repair_module/p/trouble/trouble.html'"></div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="yb clearfix">
+            <div>
+                {{tips}}
+            </div>          
+            <span class="f">报价</span>
+            <div class="total">{{mPhoneOrder.o.quote.totlePrice|price}}</div>
+            <div class="item" ng-repeat="q in mPhoneOrder.o.quote.itemsData">
+                {{q.itemName}} {{q.repairPrice|price}}
+            </div>
+            <div class="v">
+                {{mPhoneOrder.o.brand.categoryName}} {{mPhoneOrder.o.version.goodsName}} {{mPhoneOrder.o.color.categoryName}}
+            </div>            
+        </div>
+        <!-- <div>
+            <button class="btn" ng-click="query()">查询报价</button>    
+        </div> -->
+    </div>
+
+    <div class="body">
+        <button class="btn" ng-click="next()">下一步</button>
+    </div>
+    <div>
+        <div ng-show="!(!check||o.color)">
+            请选择手机颜色
+        </div>
+        <div ng-show="!(!check||o.version)">
+            请选择手机型号
+        </div>
+        <div ng-show="!(!check||o.orderBody)">
+            请选择故障类型
+        </div>
+        {{o}}
+    </div>
+</div>

@@ -1,2 +1,6 @@
 [router="repair"] .navgator {
   margin: 65px 0; }
+
+[router="repair"] .container {
+  width: 1000px;
+  margin: 0 auto; }

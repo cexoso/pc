@@ -21,7 +21,7 @@ angular.module('services').service("progressBar",['$q',function($q){
     var check=(function(){
             var start_time=null,end_time=null;
             var t=null;
-            var min_time=750;
+            var min_time=250;
             return function(){
                 if(arr.length>0&&!div.hasClass('active')){
                     start_time=Date.now();

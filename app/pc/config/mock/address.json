@@ -1,0 +1,60 @@
+{
+    "code": 200, 
+    "msg": "", 
+    "data": [
+        {
+            "id": 1, 
+            "name": "北京", 
+            "code": "P001", 
+            "parentCode": "root"
+        }, 
+        {
+            "id": 2, 
+            "name": "上海", 
+            "code": "P002", 
+            "parentCode": "root"
+        }, 
+        {
+            "id": 3, 
+            "name": "广东", 
+            "code": "P003", 
+            "parentCode": "root"
+        }, 
+        {
+            "id": 4, 
+            "name": "福建", 
+            "code": "P004", 
+            "parentCode": "root"
+        }, 
+        {
+            "id": 5, 
+            "name": "江苏", 
+            "code": "P005", 
+            "parentCode": "root"
+        }, 
+        {
+            "id": 6, 
+            "name": "浙江", 
+            "code": "P006", 
+            "parentCode": "root"
+        }, 
+        {
+            "id": 7, 
+            "name": "湖南", 
+            "code": "P007", 
+            "parentCode": "root"
+        }, 
+        {
+            "id": 126, 
+            "name": "广西", 
+            "code": "P008", 
+            "parentCode": "root"
+        }, 
+        {
+            "id": 132, 
+            "name": "四川", 
+            "code": "P009", 
+            "parentCode": "root"
+        }
+    ]
+}

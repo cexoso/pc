@@ -43,7 +43,7 @@ gulp.task('server', ['scss:watch'], function () {
                     function (req, res, next) {
                         if (!req.url.match(/\/api\/|\/mvc\//ig)) {
                             next();
-                        } else {                            
+                        } else {
                             console.log('代理：' + req.url);
                             req.url=req.url.replace('/pc','/Patica2.0');
                             // proxy.web(req, res, { target: 'http://192.168.0.145:8080/Patica2.0'});  

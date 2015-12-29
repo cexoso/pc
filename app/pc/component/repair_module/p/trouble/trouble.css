@@ -1,0 +1,57 @@
+[component="repari/trouble"] .touble_head {
+  font-size: 0; }
+  [component="repari/trouble"] .touble_head .item {
+    cursor: pointer;
+    display: inline-block;
+    width: 25%;
+    text-align: center; }
+    [component="repari/trouble"] .touble_head .item .c {
+      font-size: 14px;
+      list-style: none;
+      display: inline-block;
+      width: 140px; }
+      [component="repari/trouble"] .touble_head .item .c img {
+        background-color: #f3f3f3; }
+    [component="repari/trouble"] .touble_head .item.active img {
+      background-color: #21476c; }
+
+[component="repari/trouble"] .trouble_body {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto; }
+  [component="repari/trouble"] .trouble_body .f {
+    list-style: none;
+    width: 70%;
+    float: left;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px; }
+    [component="repari/trouble"] .trouble_body .f .item {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 15px;
+      border: 1px solid #e2e2e2;
+      margin: 5px; }
+      [component="repari/trouble"] .trouble_body .f .item.active {
+        background-color: #21476c;
+        color: #fff; }
+  [component="repari/trouble"] .trouble_body .spet {
+    width: 1px;
+    background-color: #dfdfdf;
+    float: left;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px; }
+  [component="repari/trouble"] .trouble_body .s {
+    width: 30%;
+    float: left;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px; }
+    [component="repari/trouble"] .trouble_body .s .item {
+      cursor: pointer;
+      list-style: none;
+      display: inline-block;
+      padding: 10px 15px;
+      border: 1px solid #e2e2e2;
+      margin: 5px; }
+      [component="repari/trouble"] .trouble_body .s .item.active {
+        background-color: #21476c;
+        color: #fff; }

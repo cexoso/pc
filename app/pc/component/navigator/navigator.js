@@ -1,4 +1,4 @@
-angular.module('controller').controller('navigatorCtrl',['$scope','mNavs','$state',function(s,mNavs,$state){
+angular.module('controller').controller('navigatorCtrl',['$scope','mNavs','$state','mPhoneOrder',function(s,mNavs,$state,mPhoneOrder){
     s.navs=mNavs;
     s.active=null;
     s.menuClickHandle=function(nav){
@@ -17,7 +17,10 @@ angular.module('controller').controller('navigatorCtrl',['$scope','mNavs','$stat
                 }
             }
         }
-        s.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
+        s.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){            
+            if(fromState.name=="indexContainer.repair"){
+                mPhoneOrder.init();
+            }
             s.current=find();
         });
         s.current=find();

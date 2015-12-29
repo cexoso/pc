@@ -1,0 +1,17 @@
+[component="repari/brandPicker"] .head {
+  background-color: #fff;
+  border-radius: 5px; }
+  [component="repari/brandPicker"] .head .brand {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: table;
+    border-radius: 5px; }
+    [component="repari/brandPicker"] .head .brand .item {
+      width: 1%;
+      display: table-cell;
+      list-style: none;
+      cursor: pointer;
+      border-bottom: 2px solid transparent; }
+      [component="repari/brandPicker"] .head .brand .item.active {
+        border-bottom: 2px solid #21476c; }

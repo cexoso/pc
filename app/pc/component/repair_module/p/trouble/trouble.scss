@@ -1,0 +1,74 @@
+[component="repari/trouble"]{
+    .touble_head{
+        font-size:0;
+        .item{
+            cursor: pointer;
+            display:inline-block;
+            width:25%;
+            text-align: center;
+            .c{
+                font-size:14px;
+                list-style: none;
+                display:inline-block;
+                width:140px;
+                img{
+                    background-color:#f3f3f3;
+                }
+            }
+            &.active{
+                img{
+                    background-color:#21476c;
+                }
+            }
+        }
+    }
+    .trouble_body{
+        width:100%;
+        overflow:hidden;
+        margin:0 auto; 
+        .f{
+            list-style: none;
+            width:70%;
+            float:left;
+            padding-bottom:2000px;
+            margin-bottom:-2000px;
+            .item{
+                cursor: pointer;
+                display:inline-block;
+                padding:10px 15px;
+                border:1px solid #e2e2e2;
+                margin:5px;
+                &.active{
+                    background-color: #21476c;
+                    color:#fff;
+                }
+            }
+            
+        }
+        .spet{
+            width:1px;            
+            background-color: #dfdfdf;
+            float:left;
+            padding-bottom:2000px;
+            margin-bottom:-2000px;
+        }
+        .s{
+            width:30%;
+            float:left;
+            padding-bottom:2000px;
+            margin-bottom:-2000px;
+            .item{
+                cursor: pointer;
+                list-style: none;
+                display:inline-block;
+                padding:10px 15px;
+                border:1px solid #e2e2e2;
+                margin:5px;
+                &.active{
+                    background-color: #21476c;
+                    color:#fff;
+                }
+            }   
+        }
+    }
+}

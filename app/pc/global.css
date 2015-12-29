@@ -25,7 +25,8 @@ body {
   background-size: 20px 20px;
   -webkit-animation: progress-bar-stripes 1s linear infinite normal;
           animation: progress-bar-stripes 1s linear infinite normal;
-  visibility: hidden; }
+  visibility: hidden;
+  z-index: 1000; }
   .progress-bar.active {
     visibility: visible; }
 

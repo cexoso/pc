@@ -1,0 +1,15 @@
+
+<div component="repari/repair_uesrInfo/dateInfo">
+    <div class="col input">
+        <div class="i50 i">
+        <select ng-model="address.date" ng-options="d|date:'MM月-dd日' for d in date">
+            <option disabled value="">请选择日期</option>
+        </select><span class="arrow"></span>
+        </div>  
+        <div class="i50 i">
+            <select ng-model="address.time" ng-options="t.name for t in time">
+            <option disabled value="">请选择时间段</option>
+        </select><span class="arrow"></span>
+        </div>
+    </div>
+</div>

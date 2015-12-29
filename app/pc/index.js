@@ -59,4 +59,15 @@ angular.module('patica').config(['$httpProvider',function ($httpProvider) {
 angular.module('controller', []);
 angular.module('directive', []);
 angular.module('services', []);
+angular.module('services').service("config",['$http',function($http){
+    var config={
+        "last-update":"2015-12-27",
+        "mock":false
+        // "mock":true
+    };
+    // $http.get("config/all.json").success(function(d){
+    //     angular.extend(config,d);
+    // });
+    return config;
+}]);
 angular.module('templates', []);

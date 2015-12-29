@@ -1,0 +1,19 @@
+<div component="repari/repair_uesrInfo/addressInfo">    
+    <div class="col input">
+        <div class="i33 i">
+            <select ng-model="address.province" ng-options="p.name for p in province.data">
+                <option disabled value="">请选择省份</option>
+            </select><span class="arrow"></span>
+        </div>  
+        <div class="i33 i">
+            <select ng-model="address.city" ng-options="c.name for c in city.data">
+                <option disabled value="">请选择城市</option>
+            </select><span class="arrow"></span>
+        </div>  
+        <div class="i33 i">
+            <select ng-model="address.area" ng-options="a.name for a in area.data">
+                <option disabled value="">请选择地区</option>
+            </select><span class="arrow"></span>
+        </div>  
+    </div>
+</div>

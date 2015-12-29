@@ -1,5 +1,6 @@
 <div component="repari/process">
-    <div ng-include="active.view">
-        
+    <div ng-repeat="m in mRepariNav">
+        <div ng-show="mRepariNav.active==m" ng-include="m.view">
+        </div>    
     </div>
 </div>

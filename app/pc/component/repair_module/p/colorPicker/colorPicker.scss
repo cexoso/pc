@@ -1,0 +1,32 @@
+[component="repari/color"]{
+    .head{
+        font-size:0;
+        background-color: #fff;        
+        border-radius: 5px;
+        .tips{
+            font-size:18px;
+            vertical-align: middle;
+        }
+        .color{
+            vertical-align: middle;
+            font-size:14px;
+            text-align: center;
+            display:inline-block;
+            border-radius: 5px;
+            .item{
+                float:left;
+                display: table-cell;
+                padding:10px 15px;
+                margin:5px;
+                list-style: none;
+                cursor: pointer;
+                border:1px solid #e2e2e2;
+                &.active{
+                    border:1px solid #25476a;
+                    background-color: #25476a;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}

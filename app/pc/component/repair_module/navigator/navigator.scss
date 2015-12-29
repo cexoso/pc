@@ -10,10 +10,11 @@ $active_color:#21476c;
             position: relative;
             height: 50px;
             line-height: 50px;
-            width: 150px;
+            width: 200px;
             text-indent: 20px;
             border-top: 1px solid $color;
             border-bottom: 1px solid $color;
+            cursor:pointer;
             &.active{
                 border-color:$active_color;
                 background-color: $active_color;

@@ -1,0 +1,460 @@
+{
+    "code": 200,
+    "msg": "",
+    "data": {
+        "troubleBody": {
+            "T1012": {
+                "categoryName": "自动亮度",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1012",
+                "ImageUrl": null,
+                "parentCode": "T0017",
+                "goodsType": null
+            },
+            "T0015": {
+                "categoryName": "无线连接",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0015",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1013": {
+                "categoryName": "通话靠近不黑屏",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1013",
+                "ImageUrl": null,
+                "parentCode": "T0017",
+                "goodsType": null
+            },
+            "T0016": {
+                "categoryName": "电池",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0016",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1014": {
+                "categoryName": "不震动",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1014",
+                "ImageUrl": null,
+                "parentCode": "T0017",
+                "goodsType": null
+            },
+            "T0017": {
+                "categoryName": "感应功能",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0017",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1015": {
+                "categoryName": "有电流声",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1015",
+                "ImageUrl": null,
+                "parentCode": "T0022",
+                "goodsType": null
+            },
+            "T0019": {
+                "categoryName": "卡槽",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0019",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1010": {
+                "categoryName": "重力感应",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1010",
+                "ImageUrl": null,
+                "parentCode": "T0017",
+                "goodsType": null
+            },
+            "T1011": {
+                "categoryName": "指南针",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1011",
+                "ImageUrl": null,
+                "parentCode": "T0017",
+                "goodsType": null
+            },
+            "T1016": {
+                "categoryName": "无服务",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1016",
+                "ImageUrl": null,
+                "parentCode": "T0022",
+                "goodsType": null
+            },
+            "T1017": {
+                "categoryName": "更换CPU IC/字库IC",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1017",
+                "ImageUrl": null,
+                "parentCode": "T0018",
+                "goodsType": null
+            },
+            "T1018": {
+                "categoryName": "更换音频IC",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1018",
+                "ImageUrl": null,
+                "parentCode": "T0018",
+                "goodsType": null
+            },
+            "T1019": {
+                "categoryName": "更换电源IC",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1019",
+                "ImageUrl": null,
+                "parentCode": "T0018",
+                "goodsType": null
+            },
+            "T0014": {
+                "categoryName": "按键失灵",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0014",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1025": {
+                "categoryName": "更换wifi模块",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1025",
+                "ImageUrl": null,
+                "parentCode": "T0002",
+                "goodsType": null
+            },
+            "T0006": {
+                "categoryName": "数据线插口",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0006",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T0024": {
+                "categoryName": "远程服务费",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0024",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1026": {
+                "categoryName": "wifi线路维修",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1026",
+                "ImageUrl": null,
+                "parentCode": "T0002",
+                "goodsType": null
+            },
+            "T0007": {
+                "categoryName": "外壳",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0007",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T0023": {
+                "categoryName": "服务费",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0023",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1023": {
+                "categoryName": "更换电源IC",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1023",
+                "ImageUrl": null,
+                "parentCode": "T0004",
+                "goodsType": null
+            },
+            "T1024": {
+                "categoryName": "更换CPU",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1024",
+                "ImageUrl": null,
+                "parentCode": "T0004",
+                "goodsType": null
+            },
+            "T0005": {
+                "categoryName": "屏幕显示不正常",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0005",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T0022": {
+                "categoryName": "其他",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0022",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1021": {
+                "categoryName": "更换显示IC",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1021",
+                "ImageUrl": null,
+                "parentCode": "T0018",
+                "goodsType": null
+            },
+            "T0021": {
+                "categoryName": "小故障检修",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0021",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1003": {
+                "categoryName": "边框",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1003",
+                "ImageUrl": null,
+                "parentCode": "T0007",
+                "goodsType": null
+            },
+            "T1022": {
+                "categoryName": "更换CPU",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1022",
+                "ImageUrl": null,
+                "parentCode": "T0018",
+                "goodsType": null
+            },
+            "T0020": {
+                "categoryName": "主板",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0020",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1004": {
+                "categoryName": "后壳",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1004",
+                "ImageUrl": null,
+                "parentCode": "T0007",
+                "goodsType": null
+            },
+            "T0008": {
+                "categoryName": "信号弱",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0008",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1001": {
+                "categoryName": "前摄像头",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1001",
+                "ImageUrl": null,
+                "parentCode": "T0003",
+                "goodsType": null
+            },
+            "T1020": {
+                "categoryName": "更换屏幕总成",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1020",
+                "ImageUrl": null,
+                "parentCode": "T0018",
+                "goodsType": null
+            },
+            "T0009": {
+                "categoryName": "蓝牙故障",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0009",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1002": {
+                "categoryName": "后摄像头",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1002",
+                "ImageUrl": null,
+                "parentCode": "T0003",
+                "goodsType": null
+            },
+            "T1007": {
+                "categoryName": "音量键、静音键",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1007",
+                "ImageUrl": null,
+                "parentCode": "T0014",
+                "goodsType": null
+            },
+            "T1008": {
+                "categoryName": "电池异常",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1008",
+                "ImageUrl": null,
+                "parentCode": "T0016",
+                "goodsType": null
+            },
+            "T1005": {
+                "categoryName": "电源开关键",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1005",
+                "ImageUrl": null,
+                "parentCode": "T0014",
+                "goodsType": null
+            },
+            "T1006": {
+                "categoryName": "HOME键",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1006",
+                "ImageUrl": null,
+                "parentCode": "T0014",
+                "goodsType": null
+            },
+            "T0003": {
+                "categoryName": "摄像头",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T0003",
+                "ImageUrl": null,
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T1009": {
+                "categoryName": "无法充电",
+                "isShowUp": 0,
+                "categoryType": "2004",
+                "categoryCode": "T1009",
+                "ImageUrl": null,
+                "parentCode": "T0016",
+                "goodsType": null
+            }
+        },
+        "troubleHead": {
+            "T0004": {
+                "categoryName": "无法开机",
+                "isShowUp": 1,
+                "categoryType": "2004",
+                "categoryCode": "T0004",
+                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/shutdown2.png",
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T0018": {
+                "categoryName": "进水",
+                "isShowUp": 1,
+                "categoryType": "2004",
+                "categoryCode": "T0018",
+                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/flooding2.png",
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T0010": {
+                "categoryName": "耳机孔",
+                "isShowUp": 1,
+                "categoryType": "2004",
+                "categoryCode": "T0010",
+                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/headset2.png",
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T0011": {
+                "categoryName": "麦克风",
+                "isShowUp": 1,
+                "categoryType": "2004",
+                "categoryCode": "T0011",
+                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/microphone.png",
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T0002": {
+                "categoryName": "WIFI",
+                "isShowUp": 1,
+                "categoryType": "2004",
+                "categoryCode": "T0002",
+                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/wifi2.png",
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T0012": {
+                "categoryName": "扬声器",
+                "isShowUp": 1,
+                "categoryType": "2004",
+                "categoryCode": "T0012",
+                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/voice2.png",
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T0013": {
+                "categoryName": "听筒",
+                "isShowUp": 1,
+                "categoryType": "2004",
+                "categoryCode": "T0013",
+                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/receiver2.png",
+                "parentCode": null,
+                "goodsType": null
+            },
+            "T0001": {
+                "categoryName": "外屏破碎",
+                "isShowUp": 1,
+                "categoryType": "2004",
+                "categoryCode": "T0001",
+                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/window2.png",
+                "parentCode": null,
+                "goodsType": null
+            }
+        }
+    }
+}
