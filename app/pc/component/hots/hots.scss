@@ -1,18 +1,21 @@
 [component="hots"]{
+    padding-top:23px;
     .body{
+        padding:6px 185px;
         .t{
             display: inline-block;
             width: 33%;
             .c{
-                font-size:0;    
-                width:388px;
+                font-size:0;                
                 margin:10px auto;
+                padding:0 10px;
+                overflow: hidden;
                 .quote{
                     font-size:14px;
                 }
                 .photo{
-                    height: 160px;
-                    width: 388px;
+                    height: auto;
+                    width: 100%;
                 }
             }
             .quote{

@@ -1,13 +1,15 @@
 <div class="index">
     <div component="navigator" class="container">
-        <div class="logo">
-            
-        </div>    
-        <span class="nav" ng-class="{'current':current==nav}" ng-repeat="nav in navs.data">
-            <span class="nav_item" ng-if="!nav.children" ng-click="navClickHandle(nav)" ng-include="'nav'"></span>
-            <span class="menu" ng-class="{'active':active==nav}" ng-click="menuClickHandle(nav)" ng-if="nav.children" ng-include="'menu'"></span>
-        </span>
-        <div ng-include="'component/navigator/navPoint/navPoint.html'" ng-controller="navPoint"></div>
+        <div class="center">
+            <div class="logo">
+                
+            </div>    
+            <span class="nav" ng-class="{'current':current==nav}" ng-repeat="nav in navs.data">
+                <span class="nav_item" ng-if="!nav.children" ng-click="navClickHandle(nav)" ng-include="'nav'"></span>
+                <span class="menu" ng-class="{'active':active==nav}" ng-click="menuClickHandle(nav)" ng-if="nav.children" ng-include="'menu'"></span>
+            </span>
+            <div ng-include="'component/navigator/navPoint/navPoint.html'" ng-controller="navPoint"></div>    
+        </div>
     </div>
     <div ui-view>
     </div>

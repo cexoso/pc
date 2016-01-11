@@ -6,8 +6,7 @@
   url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
-
-.iconfont {
+[class^="icon-"], [class*=" icon-"]{
   font-family:"iconfont" !important;
   font-size:16px;
   font-style:normal;
@@ -18,5 +17,7 @@
 .icon-address:before { content: "\e603"; }
 .icon-tel:before { content: "\e602"; }
 .icon-info:before { content: "\e604"; }
+.icon-ok:before { content: "\e606"; }
 .icon-wechat:before { content: "\e600"; }
 .icon-headset:before { content: "\e601"; }
+.icon-heitifangzhenglantinghei:before { content: "\e605"; }

@@ -62,8 +62,8 @@ angular.module('services', []);
 angular.module('services').service("config",['$http',function($http){
     var config={
         "last-update":"2015-12-27",
-        "mock":false
-        // "mock":true
+        // "mock":false
+        "mock":true
     };
     // $http.get("config/all.json").success(function(d){
     //     angular.extend(config,d);
@@ -71,3 +71,25 @@ angular.module('services').service("config",['$http',function($http){
     return config;
 }]);
 angular.module('templates', []);
+
+
+
+(function(src){
+    var container = document.createElement("div");
+    document.querySelector("body").appendChild(container);    
+    var style=container.style;
+    style.position="absolute";
+    style.top="-113px";
+    style.right=0;    
+    style.left=0;
+    style.zIndex=1;
+    style.opacity="1";
+    style.pointerEvents="none";
+    var img=new Image();
+    img.src=src;
+    container.appendChild(img);
+    style=img.style;
+    style.margin="0 auto";
+    style.display="block";
+    style.width="75%";
+})("../shouye.jpg");

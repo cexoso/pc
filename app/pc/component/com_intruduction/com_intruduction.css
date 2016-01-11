@@ -1,28 +1,34 @@
 [component="com_intruduction"] .i {
   display: inline-block;
-  height: 140px;
-  width: 140px;
+  height: 117px;
+  width: 117px;
   background-image: url(/pc/resource/img/index.png);
-  line-height: 140px;
+  line-height: 117px;
+  background-size: 336% auto;
   vertical-align: middle; }
 
 [component="com_intruduction"] .f {
+  padding-top: 16px;
   display: inline-block;
   vertical-align: middle; }
   [component="com_intruduction"] .f font {
     font-weight: bold;
-    font-size: 25px; }
+    font-size: 29px; }
 
 [component="com_intruduction"] .ondoor, [component="com_intruduction"] .quality_assurance, [component="com_intruduction"] .original_accessories {
   display: inline-block;
   width: 33%;
   text-align: center; }
 
-[component="com_intruduction"] .ondoor .i {
-  background-position: -7px 0; }
+[component="com_intruduction"] .ondoor {
+  padding-left: 202px; }
+  [component="com_intruduction"] .ondoor .i {
+    background-position: 2.5% 0; }
 
 [component="com_intruduction"] .quality_assurance .i {
-  background-position: -165px 0; }
+  background-position: -92% 0; }
 
-[component="com_intruduction"] .original_accessories .i {
-  background-position: -323px 0; }
+[component="com_intruduction"] .original_accessories {
+  padding-right: 202px; }
+  [component="com_intruduction"] .original_accessories .i {
+    background-position: -329% 0; }

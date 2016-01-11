@@ -13,8 +13,8 @@ angular.module('services').service("mRepariNav",['$http','$q',function($http,$q)
             "view":"component/repair_module/pay/pay.html",
         },
         {
-            "name":"订单完成",
-            "view":"",
+            "name":"订单提交",
+            "view":"component/repair_module/posted/posted.html",
         },
         {
             "name":"上门维修",

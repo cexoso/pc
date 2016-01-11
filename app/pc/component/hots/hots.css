@@ -1,39 +1,44 @@
-[component="hots"] .body .t {
-  display: inline-block;
-  width: 33%; }
-  [component="hots"] .body .t .c {
-    font-size: 0;
-    width: 388px;
-    margin: 10px auto; }
-    [component="hots"] .body .t .c .quote {
-      font-size: 14px; }
-    [component="hots"] .body .t .c .photo {
-      height: 160px;
-      width: 388px; }
-  [component="hots"] .body .t .quote {
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #d9dbda; }
-    [component="hots"] .body .t .quote:hover {
-      border: 1px solid #404043;
-      background-color: #404043;
-      color: #fff; }
-  [component="hots"] .body .t .foot {
-    background-color: #f6f7f6;
-    border: 1px solid #d9dbda;
-    padding: 10px;
-    text-align: center; }
-    [component="hots"] .body .t .foot .btn {
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none;
-      outline: none;
-      border: 1px solid #d9dbda;
-      background-color: #fff;
-      color: #22476c;
-      height: 30px;
-      width: 85px; }
-      [component="hots"] .body .t .foot .btn:hover {
-        border: 1px solid #22476c;
-        background-color: #22476c;
-        color: #fff; }
+[component="hots"] {
+  padding-top: 23px; }
+  [component="hots"] .body {
+    padding: 6px 185px; }
+    [component="hots"] .body .t {
+      display: inline-block;
+      width: 33%; }
+      [component="hots"] .body .t .c {
+        font-size: 0;
+        margin: 10px auto;
+        padding: 0 10px;
+        overflow: hidden; }
+        [component="hots"] .body .t .c .quote {
+          font-size: 14px; }
+        [component="hots"] .body .t .c .photo {
+          height: auto;
+          width: 100%; }
+      [component="hots"] .body .t .quote {
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #d9dbda; }
+        [component="hots"] .body .t .quote:hover {
+          border: 1px solid #404043;
+          background-color: #404043;
+          color: #fff; }
+      [component="hots"] .body .t .foot {
+        background-color: #f6f7f6;
+        border: 1px solid #d9dbda;
+        padding: 10px;
+        text-align: center; }
+        [component="hots"] .body .t .foot .btn {
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none;
+          outline: none;
+          border: 1px solid #d9dbda;
+          background-color: #fff;
+          color: #22476c;
+          height: 30px;
+          width: 85px; }
+          [component="hots"] .body .t .foot .btn:hover {
+            border: 1px solid #22476c;
+            background-color: #22476c;
+            color: #fff; }

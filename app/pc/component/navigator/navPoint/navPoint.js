@@ -9,8 +9,10 @@ angular.module('controller').controller("navPoint",['$scope','$timeout',function
             $timeout(function(){
                 var ele=document.querySelector('[component="navigator"].container span.current');
                 s.backgroundColor=color[Math.floor(Math.random()*color.length)];
-                s.left=ele.offsetLeft+"px";
-                s.width=ele.offsetWidth+"px";                
+                var offsetWidth=ele.offsetWidth;
+                var offsetLeft=ele.offsetLeft;
+                s.left=offsetLeft+offsetWidth*0.1+"px";
+                s.width=offsetWidth*0.75+"px";                
             },0);        
         }
     });

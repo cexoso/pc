@@ -1,18 +1,20 @@
 [component="com_intruduction"]{
     .i{
         display: inline-block;
-        height:140px;
-        width:140px;        
+        height:117px;
+        width:117px;        
         background-image: url(/pc/resource/img/index.png);
-        line-height: 140px;
+        line-height: 117px;
+        background-size:336% auto;
         vertical-align: middle;
     }
     .f{
+        padding-top: 16px;
         display:inline-block;
         vertical-align: middle;
         font{
             font-weight: bold;
-            font-size:25px;
+            font-size:29px;
         }
     }
     .ondoor,.quality_assurance,.original_accessories{
@@ -21,18 +23,20 @@
         text-align: center;
     }
     .ondoor{
+        padding-left:202px;
         .i{
-            background-position: -7px 0;
+            background-position: 2.5% 0;
         }
     }
     .quality_assurance{
         .i{
-            background-position: -165px 0;
+            background-position: -92% 0;
         }
     }
     .original_accessories{
+        padding-right:202px;
         .i{
-            background-position: -323px 0;
+            background-position: -329% 0;
         }
     }
 }
