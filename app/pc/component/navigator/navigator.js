@@ -3,13 +3,13 @@ angular.module('controller').controller('navigatorCtrl',['$scope','mNavs','$stat
     s.active=null;
     s.menuClickHandle=function(nav){
         if(angular.equals(s.active,nav)){
-            s.active=null;    
+            s.active=null;
         }else{
-            s.active=nav;            
+            s.active=nav;
         }
     }
     s.navs.promise.then(function(d){
-        function find(){        
+        function find(){
             for(var i=0;i<d.length;i++){
                 var k=d[i];
                 if(k.sref&&k.sref==$state.current.name){
@@ -17,12 +17,12 @@ angular.module('controller').controller('navigatorCtrl',['$scope','mNavs','$stat
                 }
             }
         }
-        s.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){            
+        s.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
             if(fromState.name=="indexContainer.repair"){
                 mPhoneOrder.init();
             }
             s.current=find();
         });
         s.current=find();
-    });    
+    });
 }]);

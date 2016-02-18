@@ -1,0 +1,67 @@
+<div component="repari/repair_uesrInfo" ng-controller="infoCtrl">
+    <div class="container">
+        <div class="head clearfix">
+            <div class="left">
+                <span class="c">定制彩壳</span>
+                <span class="e">Custom color</span>
+            </div>
+            <div class="title">预约信息填写</div>
+        </div>
+        <div class="body">
+            <form name="info">
+                <div class="row clearfix">
+                    <div class="col label">
+                        姓名 <font class="required">*</font>:
+                    </div>
+                    <div class="col input">
+                        <div class="i50 i">
+                            <input type="text" placeholder="请填写姓名"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col label">
+                        电话号码 <font class="required">*</font>:
+                    </div>
+                    <div class="col input">
+                        <div class="i50 i">
+                            <input type="text" placeholder="请填写电话号码"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col label">
+                        所在地区<font class="required">*</font>:
+                    </div>
+                    <div ng-include="'component/repair_module/repair_userInfo/addressInfo/addressInfo.html'" ng-controller="addressInfoCtrl"></div>
+                </div>
+                <div class="row">
+                    <div class="col label"></div>
+                    <div class="col input">
+                        <div class="i100 i">
+                            <input type="text" placeholder="请填写详细地址"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col label">
+                        预约时间<font class="required">*</font>:
+                    </div>
+                    <div ng-include="'component/repair_module/repair_userInfo/dateInfo/dateInfo.html'" ng-controller="dateInfoCtrl"></div>
+                </div>
+                <div class="row">
+                    <div class="col label"></div>
+                    <div class="col input">
+                        <div class="i100 i">
+                            <input type="text" placeholder="请填写备注信息"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col label"></div>
+                    <div class="col input">
+                        <div class="i100 i">
+                            <button class="btn" ng-click="next()">确认下单</button></div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -388,7 +388,7 @@
                 "isShowUp": 1,
                 "categoryType": "2004",
                 "categoryCode": "T0004",
-                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/shutdown2.png",
+                "ImageUrl": "http://www.patica.cn/Patica2.0/html/img2/business/breakdown/shutdown2.png",
                 "parentCode": null,
                 "goodsType": null
             },
@@ -397,7 +397,7 @@
                 "isShowUp": 1,
                 "categoryType": "2004",
                 "categoryCode": "T0018",
-                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/flooding2.png",
+                "ImageUrl": "http://www.patica.cn/Patica2.0/html/img2/business/breakdown/flooding2.png",
                 "parentCode": null,
                 "goodsType": null
             },
@@ -406,7 +406,7 @@
                 "isShowUp": 1,
                 "categoryType": "2004",
                 "categoryCode": "T0010",
-                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/headset2.png",
+                "ImageUrl": "http://www.patica.cn/Patica2.0/html/img2/business/breakdown/headset2.png",
                 "parentCode": null,
                 "goodsType": null
             },
@@ -415,7 +415,7 @@
                 "isShowUp": 1,
                 "categoryType": "2004",
                 "categoryCode": "T0011",
-                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/microphone.png",
+                "ImageUrl": "http://www.patica.cn/Patica2.0/html/img2/business/breakdown/microphone.png",
                 "parentCode": null,
                 "goodsType": null
             },
@@ -424,7 +424,7 @@
                 "isShowUp": 1,
                 "categoryType": "2004",
                 "categoryCode": "T0002",
-                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/wifi2.png",
+                "ImageUrl": "http://www.patica.cn/Patica2.0/html/img2/business/breakdown/wifi2.png",
                 "parentCode": null,
                 "goodsType": null
             },
@@ -433,7 +433,7 @@
                 "isShowUp": 1,
                 "categoryType": "2004",
                 "categoryCode": "T0012",
-                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/voice2.png",
+                "ImageUrl": "http://www.patica.cn/Patica2.0/html/img2/business/breakdown/voice2.png",
                 "parentCode": null,
                 "goodsType": null
             },
@@ -442,16 +442,16 @@
                 "isShowUp": 1,
                 "categoryType": "2004",
                 "categoryCode": "T0013",
-                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/receiver2.png",
+                "ImageUrl": "http://www.patica.cn/Patica2.0/html/img2/business/breakdown/receiver2.png",
                 "parentCode": null,
                 "goodsType": null
             },
             "T0001": {
-                "categoryName": "外屏破碎",
+                "categoryName": "外壳",
                 "isShowUp": 1,
                 "categoryType": "2004",
                 "categoryCode": "T0001",
-                "ImageUrl": "http://www.patica.com.cn/img2/business/breakdown/window2.png",
+                "ImageUrl": "http://www.patica.cn/Patica2.0/html/img2/business/breakdown/window2.png",
                 "parentCode": null,
                 "goodsType": null
             }

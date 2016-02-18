@@ -1,0 +1,75 @@
+$color:#e2e2e2;
+$active_color:#21476c;
+[component="colorful/navigator"]{
+    ul{
+        text-align: center;
+        .nav_item{
+            display: inline-block;
+            background-color: #fff;
+            color: #c5c5c5;
+            position: relative;
+            height: 84px;
+            line-height: 84px;
+            width: 204px;
+            text-indent: 20px;
+            border-top: 1px solid $color;
+            border-bottom: 1px solid $color;
+            cursor:pointer;
+            font-size:22px;
+            &.active{
+                border-color:$active_color;
+                background-color: $active_color;
+                color:#fff;
+            }
+            &.active:first-child{
+                border-left:$color;
+            }
+            &.active:not(:last-child)>.arrow_right{
+                border-color: transparent transparent transparent $active_color;
+            }
+            &.active:not(:last-child)>.arrow_right_inset{
+                border-color: transparent transparent transparent $active_color;
+            }
+            &:first-child{
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-left: 1px solid $color;
+            }
+            &:last-child{
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-right: 1px solid $color;
+            }
+            &:not(:last-child)>.arrow_right{
+                border-color: transparent transparent transparent $color;
+                border-style: solid;
+                border-width:42px 0 42px 25px;
+                content: "";
+                display: inline-block;
+                height: 0;
+                margin-top: -42px;
+                position: absolute;
+                left: 100%;
+                top: 50%;
+                width: 0;
+                z-index: 1;
+            }
+            &:not(:last-child)>.arrow_right_inset{
+                border-color: transparent transparent transparent white;
+                transform: translate(-1px,0);
+                border-style: solid;
+                border-width:42px 0 42px 24px;
+                content: "";
+                display: inline-block;
+                height: 0;
+                margin-top: -42px;
+                position: absolute;
+                left: 100%;
+                top: 50%;
+                width: 0;
+                z-index: 1;
+            }
+        }
+    }
+
+}

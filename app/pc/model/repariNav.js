@@ -18,7 +18,7 @@ angular.module('services').service("mRepariNav",['$http','$q',function($http,$q)
         },
         {
             "name":"上门维修",
-            "view":"",
+            "view":"component/repair_module/onDoor/onDoor.html",
         }
     ];
     obj.active=obj[0];

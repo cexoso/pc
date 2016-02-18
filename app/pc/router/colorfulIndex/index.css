@@ -1,0 +1,31 @@
+[router="colorfulIndex"] .container {
+  width: 1020px;
+  margin: 0 auto; }
+  [router="colorfulIndex"] .container .header {
+    margin-top: 56px;
+    padding-bottom: 37.9%;
+    position: relative; }
+    [router="colorfulIndex"] .container .header img {
+      position: absolute; }
+  [router="colorfulIndex"] .container .body {
+    margin: 27px 0 116px; }
+    [router="colorfulIndex"] .container .body .container .item {
+      display: inline-block;
+      padding: 0 10px;
+      width: 25%; }
+      [router="colorfulIndex"] .container .body .container .item .imgc {
+        display: inline-block;
+        padding-bottom: 132%;
+        border-radius: 5px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer; }
+        [router="colorfulIndex"] .container .body .container .item .imgc:hover {
+          box-shadow: 0 0 5px 0px #333; }
+        [router="colorfulIndex"] .container .body .container .item .imgc img {
+          height: 100%;
+          left: -40px;
+          position: absolute;
+          top: 3px;
+          width: auto; }

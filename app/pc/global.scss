@@ -1,17 +1,12 @@
-.body_view{
-    opacity:0.8;
-    position:relative;
-    z-index: 100;
-}
 *{
     padding:0;
-    margin:0;    
+    margin:0;
 }
 *{
     box-sizing:border-box;
 }
 body{
-    font-family: "Hiragino Sans GB", "Microsoft YaHei";   
+    font-family: "Hiragino Sans GB", "Microsoft YaHei";
     color:rgb(71,71,71);
 }
 // body::after{
@@ -39,7 +34,7 @@ body{
     background-color: #337ab7;
     background-image: linear-gradient(45deg,rgba(255,255,255,.5) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.5) 50%,rgba(255,255,255,.5) 75%,transparent 75%,transparent);
     background-size: 20px 20px;
-    animation: progress-bar-stripes 1s linear infinite normal;    
+    animation: progress-bar-stripes 1s linear infinite normal;
     visibility: hidden;
     z-index: 1000;
     &.active{
@@ -62,7 +57,7 @@ body{
         transform:translate(0,0);
     }
     100% {
-        left:50%; 
+        left:50%;
         transform:translate(-50%,0);
     }
 }
@@ -89,7 +84,7 @@ body{
 }
 @keyframes right-out {
     0% {
-        left:50%; 
+        left:50%;
         transform:translate(-50%,0);
     }
     100% {
@@ -101,13 +96,13 @@ body{
 @keyframes up-in {
     0% {
         top:-100%;
-        left:50%; 
+        left:50%;
         transform:translate(-50%,0);
         opacity:1;
         position: relative;
     }
     100% {
-        left:50%; 
+        left:50%;
         top:0;
         transform:translate(-50%,0);
         opacity:1;

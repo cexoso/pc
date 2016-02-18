@@ -1,0 +1,17 @@
+<div router="colorfulIndex">
+  <div class="container">
+    <div class="header">
+      <img src="/pc/resource/img/colorfulBanner.jpg" alt="">
+    </div>
+    <div class="body">
+      <div class="container">
+        <div class="item" ng-repeat="colorBrand in colorBrands.data.goodsItems">
+          <div class="imgc">
+            <img ng-src="{{colorBrand.imageUrl}}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

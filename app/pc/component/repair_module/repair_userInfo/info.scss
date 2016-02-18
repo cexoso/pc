@@ -1,17 +1,18 @@
-$row_height:40px;
+$row_height:58px;
 [component="repari/repair_uesrInfo"]{
     .container{
         background-color: #fff;
         border-radius: 5px;
-        padding:20px;
+        padding:47px 40px;
         .head{
             font-size:28px;
             .left{
                 width:4.5em;
-                line-height:0.7;
-                text-align: center;
+                line-height:0.6;
+                text-align: left;
                 float:left;
-                margin-right: 10px;
+                font-size:36px;
+                margin-right: 24px;
                 border-right:1px solid #d4d4d4;
                 .c{
                     font-size:100%;
@@ -23,17 +24,22 @@ $row_height:40px;
                     color:#b8b8b8;
                 }
             }
+            .title{
+                font-size:26px;
+            }
         }
         .body{
-            padding:10px 0;
+            padding:7px 0;
             .row{
-                margin:20px 0;
+                margin:26px 0;
+                font-size:20px;
+                padding:0 5px;
                 .col{
                     
                 }
                 .label{
                     float:left;
-                    width:100px;
+                    width:125px;
                     display:inline-block;
                     text-align: right;
                     color:#787878;
@@ -44,7 +50,7 @@ $row_height:40px;
                     }
                 }
                 .input{
-                    margin-left:100px;
+                    margin-left:161px;
                     font-size:0;
                     .i{
                         position: relative;
@@ -53,6 +59,8 @@ $row_height:40px;
                             padding:0 5px;
                             display:inline-block;
                             width:100%;
+                            font-size:20px;
+                            padding-left:1em;
                             appearance:none;
                             outline:none;
                             border:1px solid #c6c6c6;

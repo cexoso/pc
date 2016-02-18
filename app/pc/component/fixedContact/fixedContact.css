@@ -12,9 +12,29 @@
     transition: all 0.3s; }
     [component="fixedContact"] .container .f {
       cursor: pointer; }
+    [component="fixedContact"] .container .c:first-child {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+    [component="fixedContact"] .container .c:last-child {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; }
     [component="fixedContact"] .container .wechat {
       border-top-left-radius: 3px;
       border-top-right-radius: 3px; }
+    [component="fixedContact"] .container .b {
+      text-align: center;
+      vertical-align: middle; }
+    [component="fixedContact"] .container .dd .i {
+      border: 2px solid #fff;
+      border-radius: 50%;
+      display: inline-block;
+      font-size: 24px;
+      font-style: normal;
+      height: 42px;
+      line-height: 42px;
+      width: 42px; }
+    [component="fixedContact"] .container .dd:hover {
+      border: 2px solid #78448f; }
     [component="fixedContact"] .container .c, [component="fixedContact"] .container .b {
       margin: 2px 0;
       background-color: #aaa;
@@ -27,11 +47,6 @@
       vertical-align: middle; }
       [component="fixedContact"] .container .c .icon {
         font-size: 30px; }
-    [component="fixedContact"] .container .b {
-      text-align: center;
-      vertical-align: middle;
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 3px; }
     [component="fixedContact"] .container .c:hover, [component="fixedContact"] .container .b:hover {
       background-color: #fff;
       color: #78448f; }

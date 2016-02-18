@@ -32,9 +32,3 @@
     padding: 11px 0; }
   [router="index"] .carousel {
     min-height: 571px; }
-  [router="index"] .copyright {
-    background-color: #000;
-    text-align: center;
-    color: #aaa;
-    height: 45px;
-    line-height: 45px; }

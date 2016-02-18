@@ -1,7 +1,7 @@
 [component="hots"] {
   padding-top: 23px; }
   [component="hots"] .body {
-    padding: 6px 185px; }
+    padding: 6px 182px; }
     [component="hots"] .body .t {
       display: inline-block;
       width: 33%; }
@@ -16,7 +16,7 @@
           height: auto;
           width: 100%; }
       [component="hots"] .body .t .quote {
-        padding: 10px;
+        padding: 15px 10px;
         background-color: #fff;
         border: 1px solid #d9dbda; }
         [component="hots"] .body .t .quote:hover {
@@ -36,8 +36,9 @@
           border: 1px solid #d9dbda;
           background-color: #fff;
           color: #22476c;
-          height: 30px;
-          width: 85px; }
+          height: 55px;
+          font-size: 24px;
+          width: 123px; }
           [component="hots"] .body .t .foot .btn:hover {
             border: 1px solid #22476c;
             background-color: #22476c;

@@ -2,9 +2,9 @@
   background-color: #fff;
   border-radius: 5px; }
   [component="repari/brandPicker"] .head .brand {
-    height: 50px;
+    height: 80px;
     text-align: center;
-    line-height: 50px;
+    line-height: 80px;
     display: table;
     border-radius: 5px; }
     [component="repari/brandPicker"] .head .brand .item {

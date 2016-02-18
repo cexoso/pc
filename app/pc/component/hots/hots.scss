@@ -1,7 +1,7 @@
 [component="hots"]{
     padding-top:23px;
     .body{
-        padding:6px 185px;
+        padding:6px 182px;
         .t{
             display: inline-block;
             width: 33%;
@@ -19,7 +19,7 @@
                 }
             }
             .quote{
-                padding:10px;
+                padding:15px 10px;
                 background-color: #fff;
                 border:1px solid #d9dbda;
                 &:hover{
@@ -39,8 +39,9 @@
                     border:1px solid #d9dbda;
                     background-color: #fff;
                     color:#22476c;
-                    height:30px;                    
-                    width:85px;
+                    height:55px;
+                    font-size:24px;
+                    width:123px;
                     &:hover{
                         border:1px solid #22476c;
                         background-color: #22476c;

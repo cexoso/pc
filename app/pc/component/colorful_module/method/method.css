@@ -1,0 +1,92 @@
+[component="colorful/method"] .container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 47px 40px;
+  position: relative; }
+  [component="colorful/method"] .container .head {
+    font-size: 28px; }
+    [component="colorful/method"] .container .head .left {
+      width: 4.5em;
+      line-height: 0.6;
+      text-align: left;
+      float: left;
+      font-size: 36px;
+      margin-right: 24px;
+      border-right: 1px solid #d4d4d4; }
+      [component="colorful/method"] .container .head .left .c {
+        font-size: 100%;
+        display: inline-block; }
+      [component="colorful/method"] .container .head .left .e {
+        font-size: 44%;
+        display: inline-block;
+        color: #b8b8b8; }
+    [component="colorful/method"] .container .head .title {
+      font-size: 26px; }
+  [component="colorful/method"] .container .body {
+    margin: 40px 0 0; }
+    [component="colorful/method"] .container .body .item .title {
+      font-size: 22px; }
+    [component="colorful/method"] .container .body .item .v {
+      margin: 7px 2px; }
+      [component="colorful/method"] .container .body .item .v .btn {
+        display: inline-block;
+        height: 52px;
+        line-height: 52px;
+        text-align: center;
+        font-size: 24px;
+        margin-right: 22px;
+        width: 169px;
+        border: 1px solid #c6c6c6;
+        color: #c6c6c6;
+        background-color: #fff; }
+        [component="colorful/method"] .container .body .item .v .btn:hover, [component="colorful/method"] .container .body .item .v .btn.active {
+          background-color: #21476c;
+          color: #fff; }
+    [component="colorful/method"] .container .body .item .font {
+      display: block;
+      margin: 10px 5px;
+      font-size: 18px; }
+    [component="colorful/method"] .container .body .c {
+      font-size: 20px;
+      margin: 30px 5px; }
+      [component="colorful/method"] .container .body .c .input {
+        width: 140px;
+        margin-left: 14px;
+        vertical-align: top;
+        display: inline-block; }
+    [component="colorful/method"] .container .body .quote {
+      border: 1px solid #f6b06b;
+      display: inline-block;
+      margin: 28px 0 0;
+      min-height: 102px;
+      min-width: 386px;
+      padding: 14px; }
+      [component="colorful/method"] .container .body .quote .first .label {
+        font-size: 30px; }
+      [component="colorful/method"] .container .body .quote .first .fee {
+        font-size: 30px;
+        color: #9f0704; }
+      [component="colorful/method"] .container .body .quote .two {
+        font-size: 18px; }
+    [component="colorful/method"] .container .body .submit {
+      margin: 8px 0; }
+      [component="colorful/method"] .container .body .submit button {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        outline: none;
+        border: none;
+        color: #fff;
+        text-align: center;
+        width: 244px;
+        font-size: 28px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #f6b06b; }
+    [component="colorful/method"] .container .body .show {
+      position: absolute;
+      top: 146px;
+      right: 0; }
+      [component="colorful/method"] .container .body .show img {
+        height: auto;
+        width: 336px; }

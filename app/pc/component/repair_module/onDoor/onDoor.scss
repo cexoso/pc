@@ -1,0 +1,70 @@
+[component="repari/on_door"]{
+    .container{
+        background-color: #fff;
+        padding:20px;
+        .header{
+            border-bottom:1px solid #e8e8e8;
+            text-align: left;
+            padding:30px 194px 26px;
+            .t{
+                display: inline-block;
+                .left{
+                    color: #22466a;
+                    float: left;
+                    font-size: 84px;
+                    font-weight: 800;
+                    left: -6px;
+                    margin-right: 17px;
+                    position: relative;
+                    top: -12px;
+                }
+                .right{
+                    float:right;
+                    .t1{
+                        font-size:40px;
+                        line-height: 1;
+                        color:#f7b26d;
+                        white-space: nowrap;                        
+                    }
+                    .t2{
+                        font-size:22px;
+                        line-height: 2;
+                        white-space: nowrap;
+                    }
+                }    
+            }
+        }
+        .body{            
+            border-bottom:1px solid #e8e8e8;
+            font-size: 24px;
+            letter-spacing: 2px;
+            padding: 0 0 20px 58px;
+        }
+        .footer{    
+            padding:5px 0 100px 58px;
+            .wechat{
+                margin-bottom:38px;
+                .icon-wechat{
+                    font-size: 30px;
+                    margin-right:6px;
+                    vertical-align: top;
+                }
+                .f{
+                    font-size: 20px;
+                    vertical-align: top;
+                    letter-spacing: 2.5px;
+                }
+            }        
+            .item{
+                font-size:22px;
+                margin-bottom:4px;
+                .label{
+                    display:inline-block;
+                }
+                .value{
+                    display:inline-block;
+                }
+            }
+        }
+    }
+}

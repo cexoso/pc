@@ -1,0 +1,43 @@
+[router="colorfulIndex"]{
+  .container{
+    width: 1020px;
+    margin: 0 auto;
+    .header{
+      margin-top: 56px;
+      padding-bottom: 37.9%;
+      position: relative;
+      img{
+        position: absolute;
+      }
+    }
+    .body{
+      margin:27px 0 116px;
+      .container{
+        .item{
+          display: inline-block;
+          padding:0 10px;
+          width: 25%;
+          .imgc{
+            display: inline-block;
+            padding-bottom: 132%;
+            border-radius: 5px;
+            width:100%;
+            position: relative;
+            overflow: hidden;
+            cursor:pointer;
+            &:hover{
+              box-shadow:0 0 5px 0px #333;
+            }
+            img{
+              height: 100%;
+              left: -40px;
+              position: absolute;
+              top: 3px;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

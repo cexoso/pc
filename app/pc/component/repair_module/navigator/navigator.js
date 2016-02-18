@@ -1,6 +1,6 @@
 angular.module('controller').controller('reapairNavigatorCtrl',['$scope','$rootScope','$state','$timeout','mRepariNav',function(s,$rootScope,state,$timeout,mRepariNav){
     s.mRepariNav=mRepariNav;
-    setActive(mRepariNav[3]);
+    setActive(mRepariNav[0]);
     s.clickHandle=function(nav){
         setActive(nav);
     }

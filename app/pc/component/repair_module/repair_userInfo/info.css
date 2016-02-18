@@ -1,15 +1,16 @@
 [component="repari/repair_uesrInfo"] .container {
   background-color: #fff;
   border-radius: 5px;
-  padding: 20px; }
+  padding: 47px 40px; }
   [component="repari/repair_uesrInfo"] .container .head {
     font-size: 28px; }
     [component="repari/repair_uesrInfo"] .container .head .left {
       width: 4.5em;
-      line-height: 0.7;
-      text-align: center;
+      line-height: 0.6;
+      text-align: left;
       float: left;
-      margin-right: 10px;
+      font-size: 36px;
+      margin-right: 24px;
       border-right: 1px solid #d4d4d4; }
       [component="repari/repair_uesrInfo"] .container .head .left .c {
         font-size: 100%;
@@ -18,22 +19,26 @@
         font-size: 44%;
         display: inline-block;
         color: #b8b8b8; }
+    [component="repari/repair_uesrInfo"] .container .head .title {
+      font-size: 26px; }
   [component="repari/repair_uesrInfo"] .container .body {
-    padding: 10px 0; }
+    padding: 7px 0; }
     [component="repari/repair_uesrInfo"] .container .body .row {
-      margin: 20px 0; }
+      margin: 26px 0;
+      font-size: 20px;
+      padding: 0 5px; }
       [component="repari/repair_uesrInfo"] .container .body .row .label {
         float: left;
-        width: 100px;
+        width: 125px;
         display: inline-block;
         text-align: right;
         color: #787878;
-        line-height: 40px;
-        height: 40px; }
+        line-height: 58px;
+        height: 58px; }
         [component="repari/repair_uesrInfo"] .container .body .row .label .required {
           color: #fa2845; }
       [component="repari/repair_uesrInfo"] .container .body .row .input {
-        margin-left: 100px;
+        margin-left: 161px;
         font-size: 0; }
         [component="repari/repair_uesrInfo"] .container .body .row .input .i {
           position: relative;
@@ -43,13 +48,15 @@
             padding: 0 5px;
             display: inline-block;
             width: 100%;
+            font-size: 20px;
+            padding-left: 1em;
             -webkit-appearance: none;
                -moz-appearance: none;
                     appearance: none;
             outline: none;
             border: 1px solid #c6c6c6;
-            line-height: 40px;
-            height: 40px; }
+            line-height: 58px;
+            height: 58px; }
           [component="repari/repair_uesrInfo"] .container .body .row .input .i select + .arrow {
             display: inline-block;
             margin-top: -8px;

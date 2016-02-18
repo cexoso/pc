@@ -1,0 +1,38 @@
+[directive="number"] {
+  font-size: 14px;
+  height: 100%; }
+  [directive="number"] .number-container {
+    height: 100%;
+    font-size: 0; }
+    [directive="number"] .number-container .minus, [directive="number"] .number-container .plus, [directive="number"] .number-container .input {
+      vertical-align: top;
+      font-size: 14px; }
+      [directive="number"] .number-container .minus .btn, [directive="number"] .number-container .plus .btn, [directive="number"] .number-container .input .btn {
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        display: inline-block;
+        height: 100%;
+        width: 33px;
+        text-align: center;
+        vertical-align: middle;
+        border: none;
+        line-height: 33px;
+        background-color: #333;
+        color: #fff; }
+        [directive="number"] .number-container .minus .btn:active, [directive="number"] .number-container .plus .btn:active, [directive="number"] .number-container .input .btn:active {
+          background-color: #000; }
+    [directive="number"] .number-container .minus {
+      height: 100%;
+      float: left; }
+    [directive="number"] .number-container .plus {
+      height: 100%;
+      float: right; }
+    [directive="number"] .number-container .number-input {
+      height: 32px;
+      padding: 0 33.1px; }
+      [directive="number"] .number-container .number-input input {
+        text-align: center;
+        height: 100%;
+        width: 100%; }

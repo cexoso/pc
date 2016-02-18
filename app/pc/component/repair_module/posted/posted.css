@@ -3,31 +3,38 @@
   padding: 20px; }
   [component="repari/posted"] .container .header {
     border-bottom: 1px solid #e8e8e8;
-    text-align: center;
-    padding: 10px 0; }
+    text-align: left;
+    padding: 30px 194px; }
     [component="repari/posted"] .container .header .t {
       display: inline-block; }
       [component="repari/posted"] .container .header .t .left {
         float: left;
-        font-size: 40px;
+        font-size: 74px;
         color: #f7b26d;
         font-weight: 800;
         margin-right: 30px; }
       [component="repari/posted"] .container .header .t .right {
         float: right; }
         [component="repari/posted"] .container .header .t .right .t1 {
-          font-size: 18px;
+          font-size: 40px;
+          line-height: 1;
           color: #f7b26d;
           white-space: nowrap; }
         [component="repari/posted"] .container .header .t .right .t2 {
-          font-size: 14px;
+          font-size: 22px;
+          line-height: 2;
           white-space: nowrap; }
   [component="repari/posted"] .container .body {
     border-bottom: 1px solid #e8e8e8;
-    padding: 20px 0 20px 258px; }
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 5px 0 20px 58px; }
   [component="repari/posted"] .container .footer {
-    padding: 20px 0 100px 258px; }
-    [component="repari/posted"] .container .footer .item .label {
-      display: inline-block; }
-    [component="repari/posted"] .container .footer .item .value {
-      display: inline-block; }
+    padding: 20px 0 100px 58px; }
+    [component="repari/posted"] .container .footer .item {
+      font-size: 22px;
+      margin-bottom: 4px; }
+      [component="repari/posted"] .container .footer .item .label {
+        display: inline-block; }
+      [component="repari/posted"] .container .footer .item .value {
+        display: inline-block; }

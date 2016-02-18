@@ -4,6 +4,7 @@ angular.module('controller').controller("navPoint",['$scope','$timeout',function
    ];
    s.$watch('current',function(n){
         if(!n){
+            s.width=0;
             return null;
         }else{
             $timeout(function(){
@@ -12,8 +13,8 @@ angular.module('controller').controller("navPoint",['$scope','$timeout',function
                 var offsetWidth=ele.offsetWidth;
                 var offsetLeft=ele.offsetLeft;
                 s.left=offsetLeft+offsetWidth*0.1+"px";
-                s.width=offsetWidth*0.75+"px";                
-            },0);        
+                s.width=offsetWidth*0.75+"px";
+            },0);
         }
     });
 }]);

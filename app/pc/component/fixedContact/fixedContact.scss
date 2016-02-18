@@ -12,9 +12,36 @@
         .f{
             cursor: pointer;
         }
+        .c:first-child{
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        .c:last-child{
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;   
+        }
         .wechat{
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
+        }
+        .b{
+            text-align: center;
+            vertical-align: middle;
+        }
+        .dd{
+            .i{
+                border: 2px solid #fff;
+                border-radius: 50%;
+                display: inline-block;
+                font-size: 24px;
+                font-style: normal;
+                height: 42px;
+                line-height: 42px;
+                width: 42px;
+            }   
+            &:hover{
+                border: 2px solid #78448f;
+            }         
         }
         .c,.b{            
             margin:2px 0;
@@ -32,12 +59,7 @@
                 font-size:30px;
             }
         }
-        .b{
-            text-align: center;
-            vertical-align: middle;
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;   
-        }
+        
         .c:hover,.b:hover{
             background-color: #fff;
             color:#78448f;

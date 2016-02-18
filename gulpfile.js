@@ -33,51 +33,41 @@ var gulp = require('gulp'),
         });
         res.end(err+"");
     });
-gulp.task('server', ['scss:watch'], function () {
-    connect.server({
-        root: ['app','bower_components'],
-        livereload: true,
-        port: 80,
-        middleware: function (connect, opt) {
-                return [
-                    function (req, res, next) {
-                        if (!req.url.match(/\/api\/|\/mvc\//ig)) {
-                            next();
-                        } else {
-                            console.log('代理：' + req.url);
-                            req.url=req.url.replace('/pc','/Patica2.0');
-                            // proxy.web(req, res, { target: 'http://192.168.0.145:8080/Patica2.0'});  
-                            // proxy.web(req, res, { target: 'http://www.patica.com.cn:9080/Patica2.0'}); 
-                            // ?usercode=ohQRxsxXwBlQf5qdTvgecbYYjWGE
-                            // ?usercode=ohQRxs4EMc4dBVahHIY7HvvQ2XNM
-                            proxy.web(req, res, { target: 'http://www.patica.cn'});
-                            // proxy.web(req, res, { target: 'http://localhost:8080/Patica2.0'});                    
-                        }
-                    }
-                ]
-            } //end of middleware
-    });
-    var html = 'app/pc/**/*.html';
-    var css = 'app/pc/**/*.css';
-    var js = 'app/pc/**/*.js';
-    chokidar.watch([].concat(css, js))
-        .on('add', injectDev)
-        .on('unlink', injectDev);
-    chokidar.watch([].concat(css, js, html))
-        .on('all', (function () {
-            var t = null;
-            return function (event, path) {
-                if (t) {
-                    clearTimeout(t);
-                }
-                t = setTimeout(function () {
-                    console.log("livereload");
-                    gulp.src('./app/pc/index.html')
-                        .pipe(connect.reload());
-                }, 50);
-            }
-        })());
-});
+
+gulp.task("server",['scss:watch'],function(){
+  var browserSync=require("browser-sync");
+  browserSync.init({
+    server:{
+      baseDir:["app","bower_components"],
+      middleware: [function (req, res, next) {
+        if(!req.url.match("/api/")){
+          next();
+        }else{
+          // console.log("代理："+req.url)
+          // next();
+          req.url=req.url.replace("/pc/","/Patica2.0/");
+          console.log(req.url)
+          proxy.web(req, res, { target: 'http://www.patica.cn'});
+        }
+      }]
+    },
+    port:80
+  });//browerSync.init end
+  var html = 'app/pc/**/*.html';
+  var css = 'app/pc/**/*.css';
+  var js = 'app/pc/**/*.js';
+  chokidar.watch([].concat(css, js))
+      .on('add', injectDev)
+      .on('unlink', injectDev);
+  chokidar.watch([].concat(js,html))
+      .on('all',browserSync.reload);
+  chokidar.watch([].concat(css))
+      .on('all', function (event, path) {
+        console.log(path)
+        gulp.src(path)
+          .pipe(browserSync.stream());
+      });
+});//task server end
 
 function clear() {
     return gulp.src('dist')
@@ -85,45 +75,6 @@ function clear() {
             force: true
         }));
 };
-function jsHint(){
-    return gulp.src(['app/pc/scripts/**/*.js', 'app/pc/components/**/*.js'])      
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-}
-function distLogic() {
-    return gulp.src(['app/pc/scripts/**/*.js','app/pc/components/**/*.js'])
-        .pipe(sort(function (p1, p2) {
-            return -1;
-        }))
-        .pipe(concat('logic.js'), {
-            newLine: ';'
-        })        
-        .pipe(jsmin())
-        .pipe(uglify())
-        .pipe(rev())
-        .pipe(gulp.dest('./dist/scripts'));
-};
-
-function dist_css() {
-    var filter = gulpFilter('*.css');
-    var libcss = gulp.src(bowerFiles())
-        .pipe(filter);
-    var mycss = gulp.src(['app/pc/**/*.scss','!app/pc/**/base.scss'])
-        .pipe(sass()
-            .on('error', sass.logError));
-    return es.merge(libcss, mycss)
-        .pipe(sort())
-        .pipe(concat('css.css'), {
-            newLine: ';'
-        })
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions']
-        }))
-        .pipe(csso())
-        .pipe(rev())
-        .pipe(gulp.dest('dist/css'));
-};
-
 function makeCache() {
     return gulp.src('app/pc/component/**/*.html')
         .pipe(sort())
@@ -134,24 +85,6 @@ function makeCache() {
         .pipe(rev())
         .pipe(gulp.dest('./dist/scripts'));
 };
-
-function dist_html() {
-    return gulp.src('app/pc/indexTpl.html')
-        .pipe(inject(gulp.src(['dist/**/*.css', 'dist/scripts/**/*.js'], {
-            read: false
-        }).pipe(sort()), {
-            name: 'inject',
-            addRootSlash: false,
-            ignorePath: ['dist']
-        }))
-        .pipe(rename('index.html'))
-        .pipe(gulp.dest('dist/'));
-};
-
-function dist() {
-    return gulp.start(['dist_html']);
-};
-
 function distlib() {
     var filter = gulpFilter('*.js');
     console.log(bowerFiles());
@@ -165,28 +98,10 @@ function distlib() {
         .pipe(rev())
         .pipe(gulp.dest('./dist/scripts'));
 };
-function distFonts(){
-    return gulp.src('app/pc/fonts/*')
-        // .pipe(image())
-        .pipe(gulp.dest('./dist/fonts'));
-}
-function distimg() {
-    gulp.src('app/pc/favicon.ico')
-    .pipe(gulp.dest('dist'))
-    return gulp.src('app/pc/images/*')
-        // .pipe(image())
-        .pipe(gulp.dest('./dist/images'));
-};
-gulp.task('dist_html', ['makeCache', 'distlib', 'distLogic', 'dist_css','distimg','distFonts'], dist_html);
+
+
 gulp.task('makeCache', makeCache);
-gulp.task('distLogic', distLogic);
-gulp.task('jsHint', jsHint);
-gulp.task('distlib', distlib);
-gulp.task('distFonts', distFonts);
-gulp.task('distimg', distimg);
-gulp.task('dist_css', dist_css);
 gulp.task('clear', clear);
-gulp.task('dist', ['clear'], dist);
 gulp.task('default', ['server']);
 /**
  * 开发模式自动注入
@@ -270,7 +185,7 @@ function scssRemove(csspath) {
         .pipe(rimraf({
             force: true
         }));
-}   
+}
 gulp.task('scss:watch', function () {
     chokidar.watch('app/pc/**/*.scss')
         .on('add', function (path) {

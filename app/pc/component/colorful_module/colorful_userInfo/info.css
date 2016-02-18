@@ -1,0 +1,101 @@
+[component="repari/repair_uesrInfo"] .container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 47px 40px; }
+  [component="repari/repair_uesrInfo"] .container .head {
+    font-size: 28px; }
+    [component="repari/repair_uesrInfo"] .container .head .left {
+      width: 4.5em;
+      line-height: 0.6;
+      text-align: left;
+      float: left;
+      font-size: 36px;
+      margin-right: 24px;
+      border-right: 1px solid #d4d4d4; }
+      [component="repari/repair_uesrInfo"] .container .head .left .c {
+        font-size: 100%;
+        display: inline-block; }
+      [component="repari/repair_uesrInfo"] .container .head .left .e {
+        font-size: 44%;
+        display: inline-block;
+        color: #b8b8b8; }
+    [component="repari/repair_uesrInfo"] .container .head .title {
+      font-size: 26px; }
+  [component="repari/repair_uesrInfo"] .container .body {
+    padding: 7px 0; }
+    [component="repari/repair_uesrInfo"] .container .body .row {
+      margin: 26px 0;
+      font-size: 20px;
+      padding: 0 5px; }
+      [component="repari/repair_uesrInfo"] .container .body .row .label {
+        float: left;
+        width: 125px;
+        display: inline-block;
+        text-align: right;
+        color: #787878;
+        line-height: 58px;
+        height: 58px; }
+        [component="repari/repair_uesrInfo"] .container .body .row .label .required {
+          color: #fa2845; }
+      [component="repari/repair_uesrInfo"] .container .body .row .input {
+        margin-left: 161px;
+        font-size: 0; }
+        [component="repari/repair_uesrInfo"] .container .body .row .input .i {
+          position: relative;
+          display: inline-block;
+          padding: 0 5px; }
+          [component="repari/repair_uesrInfo"] .container .body .row .input .i input, [component="repari/repair_uesrInfo"] .container .body .row .input .i select {
+            padding: 0 5px;
+            display: inline-block;
+            width: 100%;
+            font-size: 20px;
+            padding-left: 1em;
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+            outline: none;
+            border: 1px solid #c6c6c6;
+            line-height: 58px;
+            height: 58px; }
+          [component="repari/repair_uesrInfo"] .container .body .row .input .i select + .arrow {
+            display: inline-block;
+            margin-top: -8px;
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            border-color: #484848 #484848 transparent transparent;
+            border-style: solid;
+            border-width: 2px;
+            -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+            -webkit-transform-origin: 78% 48% 0;
+                    transform-origin: 78% 48% 0;
+            width: 16px;
+            height: 16px;
+            pointer-events: none; }
+          [component="repari/repair_uesrInfo"] .container .body .row .input .i:first-child {
+            padding-left: 0; }
+          [component="repari/repair_uesrInfo"] .container .body .row .input .i:last-child {
+            padding-right: 0; }
+          [component="repari/repair_uesrInfo"] .container .body .row .input .i .btn {
+            background-color: #f6b06b;
+            color: #fff;
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+            outline: none;
+            border: 1px solid #f6b06b;
+            height: 50px;
+            line-height: 50px;
+            width: 250px;
+            font-size: 24px; }
+            [component="repari/repair_uesrInfo"] .container .body .row .input .i .btn:hover {
+              opacity: 0.8; }
+            [component="repari/repair_uesrInfo"] .container .body .row .input .i .btn:active {
+              background-color: #21476c; }
+        [component="repari/repair_uesrInfo"] .container .body .row .input .i50 {
+          width: 50%; }
+        [component="repari/repair_uesrInfo"] .container .body .row .input .i33 {
+          width: 33.33%; }
+        [component="repari/repair_uesrInfo"] .container .body .row .input .i100 {
+          width: 100%; }

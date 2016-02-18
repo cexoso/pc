@@ -1,0 +1,53 @@
+<div component="colorful/method" ng-controller="methodCtrl">
+  <div class="container">
+      <div class="head clearfix">
+          <div class="left">
+              <span class="c">定制彩壳</span>
+              <span class="e">Custom color</span>
+          </div>
+          <div class="title">经典白+玫红</div>
+      </div>
+      <div class="body">
+          <div class="item">
+            <div class="title">
+              请选择换壳方式
+            </div>
+            <div class="v">
+              <span class="btn">上门换壳</span>
+              <span class="btn">寄送换壳</span>
+              <span class="btn">到店换壳</span>
+            </div>
+            <font class="font">目前只提供深圳罗湖、南山地区的上门服务。</font>
+          </div>
+          <div class="item">
+            <div class="title">
+              手机选择
+            </div>
+            <div class="v">
+              <span class="btn">iPhone6</span>
+              <span class="btn">iPhone6 plus</span>
+            </div>
+          </div>
+          <div class="c">
+            <span class="label">数量选择:</span>
+            <div class="input">
+              <input type="text" number default=1 min=1 max=5 ng-model="data.safeNum">
+            </div>
+          </div>
+          <div class="quote">
+            <div class="first">
+              <span class="label">报价：</span><span class="fee">{{1000|currency:"￥"}}</span>
+            </div>
+            <div class="two">
+              上门换壳 iPhone6 经典白+玫红
+            </div>
+          </div>
+          <div class="submit">
+            <button>填写订单</button>
+          </div>
+          <div class="show">
+            <img src="http://www.patica.cn/picture/img2.1/business/shell/model/white.jpg">
+          </div>
+      </div>
+  </div>
+</div>

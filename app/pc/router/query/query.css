@@ -1,0 +1,60 @@
+[router="query"] .container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 32px 40px;
+  margin: 80px auto;
+  width: 1020px; }
+  [router="query"] .container .head {
+    border-bottom: 1px solid #d2d2d2;
+    font-size: 28px;
+    padding-bottom: 22px; }
+    [router="query"] .container .head .left {
+      width: 4.5em;
+      line-height: 0.6;
+      text-align: left;
+      float: left;
+      font-size: 36px;
+      margin-right: 24px;
+      border-right: 1px solid #d4d4d4; }
+      [router="query"] .container .head .left .c {
+        font-size: 100%;
+        display: inline-block; }
+      [router="query"] .container .head .left .e {
+        font-size: 44%;
+        display: inline-block;
+        color: #b8b8b8; }
+    [router="query"] .container .head .title {
+      font-size: 26px; }
+  [router="query"] .container .body .query {
+    padding: 22px 0;
+    height: 105px; }
+    [router="query"] .container .body .query .params {
+      padding: 0 5px;
+      display: inline-block;
+      width: 100%;
+      font-size: 20px;
+      padding-left: 1em;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      outline: none;
+      border: 1px solid #d2d2d2;
+      border-radius: 5px;
+      line-height: 47px;
+      height: 47px;
+      margin: 0 6px;
+      width: 294px; }
+    [router="query"] .container .body .query .btn {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      outline: none;
+      border: 1px solid #d2d2d2;
+      display: inline-block;
+      line-height: 47px;
+      height: 47px;
+      background-color: #f6b06b;
+      color: #fff;
+      width: 114px;
+      border-radius: 5px;
+      font-size: 22px; }
